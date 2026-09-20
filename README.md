@@ -3,8 +3,8 @@
 Modernization of the legacy mathematics course:
 
 - legacy source: `http://users.ift.uni.wroc.pl/~rdurka/matissp/`
-- repository: `nowitends/issp_port`
-- target site: `https://nowitends.github.io/issp_port/`
+- repository: `RemigiuszDurka/port_issp/`
+- target site: `https://RemigiuszDurka.github.io/port_issp/`
 - computational language: GNU Octave / MATLAB-compatible code where practical
 
 ## Principle
