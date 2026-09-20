@@ -1,0 +1,32 @@
+set out "fig.gif"
+set term gif animate delay 5 enhanced optimize
+
+N = 200
+max_x = 10
+f(x) = x*sin(x)/(x>=0)
+
+set arrow from -1,0 to 11,0 head
+set arrow from 0,-6 to 0,11 head
+set yzeroaxis
+set xzeroaxis
+set xtics axis in nomirror  offset 0, 0.2 font ",14"
+set ytics axis in nomirror font ",14"
+set mxtics 4
+set mytics 2
+set samples 500
+set border 0
+set label "t"  at 10.33, 1
+set label "x(t) = t*sin(t)" at 0.3, 10.2
+
+do for [i = 1:N] {
+  xx = max_x*i*1.0/N
+  yy = f(xx)
+  set object 1 circle at 0, yy radius char 1.5 fillcolor rgb 'red' fillstyle solid noborder
+  set object 2 circle at xx, 0 radius char 0.5 fillcolor rgb 'brown' fillstyle solid noborder 
+  set arrow 3 lt 2 lc rgb "blue" from 0, yy to xx, yy head
+  set arrow 4 lt 2 lc rgb "brown" from xx, 0 to xx, yy head
+  
+  plot [-0.9:10.99][-5.9:10.9] f(x)/(x < xx) lw 2 not
+ # pause(0.05)
+}
+#pause(5)

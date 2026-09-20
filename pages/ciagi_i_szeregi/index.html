@@ -1,0 +1,1245 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Materiały z matematyki i obliczeń numerycznych dla studentów ISSP">
+      
+      
+        <meta name="author" content="Remigiusz Durka">
+      
+      
+        <link rel="canonical" href="https://remigiuszdurka.github.io/issp_port/pages/ciagi_i_szeregi/">
+      
+      
+        <link rel="prev" href="../liczby_i_operacje/">
+      
+      
+        <link rel="next" href="../funkcje/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Ciągi i szeregi - Matematyka dla ISSP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../site_assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ciagi-i-szeregi" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Matematyka dla ISSP" class="md-header__button md-logo" aria-label="Matematyka dla ISSP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Matematyka dla ISSP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ciągi i szeregi
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Tryb ciemny"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Tryb ciemny" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Tryb jasny"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Tryb jasny" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RemigiuszDurka/port_issp/" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RemigiuszDurka/port_issp/
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Matematyka dla ISSP" class="md-nav__button md-logo" aria-label="Matematyka dla ISSP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Matematyka dla ISSP
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RemigiuszDurka/port_issp/" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RemigiuszDurka/port_issp/
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wolfram-alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wolfram Alpha
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../octave_matlab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Octave/MATLAB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Octave
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Octave
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../co-to-jest-octave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Co to jest Octave?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obsluga-octavea/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Obsługa Octave’a
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kalkulator-naukowy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kalkulator naukowy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zmienne-w-octave/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zmienne
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skrypty-i-funkcje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Skrypty i funkcje
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../octave-wykresy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wykresy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Matematyka
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Matematyka
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../liczby_i_operacje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Liczby i operacje
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Ciągi i szeregi
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ciągi i szeregi
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wykad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wykład
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadania-do-wykonania-recznie-czesc-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zadania do wykonania ręcznie — część A
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadania-przy-asyscie-komputera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zadania przy asyście komputera
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadania-do-wykonania-recznie-czesc-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zadania do wykonania ręcznie — część B
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../funkcje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funkcje
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aproksymacje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aproksymacje
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pochodna1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pochodna (1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pochodna2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pochodna (2)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Całki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Równania ODE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pde/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Równania PDE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wykad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wykład
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadania-do-wykonania-recznie-czesc-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zadania do wykonania ręcznie — część A
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadania-przy-asyscie-komputera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zadania przy asyście komputera
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadania-do-wykonania-recznie-czesc-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zadania do wykonania ręcznie — część B
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ciagi-i-szeregi">Ciągi i szeregi<a class="headerlink" href="#ciagi-i-szeregi" title="Permanent link">&para;</a></h1>
+<p>Ciąg to funkcja określona na zbiorze liczb naturalnych <span class="arithmatex">\(\mathbb{N}\)</span>, oznaczana jako <span class="arithmatex">\(\{a_n\}_{n=1}^{\infty}\)</span>. Jej wyrazy mogą być liczbami rzeczywistymi, zespolonymi lub innymi obiektami matematycznymi. Szereg to suma wyrazów ciągu, np. <span class="arithmatex">\(\displaystyle \sum_{n=1}^{N} a_n\)</span>. Gdy <span class="arithmatex">\(N\)</span> dąży do nieskończoności, mówimy o szeregu nieskończonym.</p>
+<h2 id="wykad">Wykład<a class="headerlink" href="#wykad" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Materiały: <a href="../../site_assets/ciagi.pdf">Ciągi.pdf</a></li>
+</ul>
+<!-- - [Ciągi i szeregi — HTML](../site_assets/ciagi.html) -->
+<ul>
+<li><a href="../../site_assets/ciagi_old.pdf">Starsza prezentacja</a></li>
+</ul>
+<h2 id="zadania-do-wykonania-recznie-czesc-a">Zadania do wykonania ręcznie — część A<a class="headerlink" href="#zadania-do-wykonania-recznie-czesc-a" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Jaki to ciąg: <span class="arithmatex">\(4,4,4,4,4,4,\ldots\)</span>?</li>
+<li>Oblicz wartość piątego wyrazu ciągu arytmetycznego, jeżeli jego czwarty wyraz ma wartość 20, a szósty ma wartość 28.</li>
+<li>Oblicz wartość ósmego wyrazu ciągu geometrycznego, którego siódmy wyraz ma wartość 9, a dziewiąty ma wartość 1.</li>
+<li>Dla ciągu o wzorze ogólnym <span class="arithmatex">\(a_n=2n-10\)</span> określ, ile wyrazów ciągu przyjmuje wartość ujemną.</li>
+<li>Podaj wzór rekurencyjny <span class="arithmatex">\(a_{n+1}=a_n+\ldots\)</span> ciągu arytmetycznego, którego pierwszy wyraz ma wartość 5, a dziesiąty wyraz ma wartość 23.</li>
+<li>Oblicz sumę wyrazów ciągu geometrycznego: <span class="arithmatex">\(-1+2-4+\ldots-64\)</span>.</li>
+<li>Udowodnij, że <span class="arithmatex">\(a_n=2n^2-1\)</span> nie jest ciągiem arytmetycznym.</li>
+<li>Ciąg arytmetyczny składa się z 200 elementów. Pierwszy z nich ma wartość <span class="arithmatex">\(-10\)</span>, a wartością ostatniego jest 60. Ile wynosi suma tego ciągu?</li>
+<li>Ile wynosi wyrażenie <span class="arithmatex">\(1+2+4+8+\ldots+2^{10}\)</span>?</li>
+<li>Dla jakich wartości parametru <span class="arithmatex">\(n\)</span> podany ciąg jest arytmetyczny: <span class="arithmatex">\((n^2-1)\)</span>, <span class="arithmatex">\((3n+1)\)</span>, <span class="arithmatex">\((2n^2-6)\)</span>?</li>
+<li>Pomiędzy liczby 4 i 108 wstaw dwie liczby tak, by tworzyły ciąg geometryczny.</li>
+<li>
+<p>Udowodnij, że w ciągu arytmetycznym każdy wyraz <span class="arithmatex">\(a_n\)</span> jest średnią arytmetyczną swoich sąsiadów:</p>
+<div class="arithmatex">\[
+a_n=\frac{a_{n-1}+a_{n+1}}{2}.
+\]</div>
+</li>
+<li>
+<p>Udowodnij, że w ciągu geometrycznym każdy wyraz <span class="arithmatex">\(a_n\)</span> jest średnią geometryczną swoich sąsiadów:</p>
+<div class="arithmatex">\[
+a_n^2=a_{n-1}\cdot a_{n+1}.
+\]</div>
+</li>
+</ol>
+<h2 id="zadania-przy-asyscie-komputera">Zadania przy asyście komputera<a class="headerlink" href="#zadania-przy-asyscie-komputera" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Do czego w Octave służą polecenia:</p>
+</li>
+<li>
+<p><code>cumsum</code>,</p>
+</li>
+<li>
+<p><code>diff</code>?</p>
+</li>
+<li>
+<p>Używając Octave, wyznacz sumy skończone:</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \sum_{k=1}^{100} k^2\)</span>,</p>
+</li>
+<li><span class="arithmatex">\(\displaystyle \frac{4}{N}\sum_{k=1}^{N}\sqrt{1-\frac{k^2}{N^2}}\)</span> dla <span class="arithmatex">\(N=10000\)</span>.</li>
+</ol>
+<p>Uwaga: powyższe wyrażenie z całkiem niezłą dokładnością przybliża pole koła o promieniu 1, czyli wartość <span class="arithmatex">\(\pi\)</span>.</p>
+<ol>
+<li>
+<p>Znajdź w Wolfram Alpha następujące sumy nieskończone:</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \sum_{k=0}^{\infty}\left(\frac{3}{4}\right)^k\)</span> — wyjątkowo ten przykład najpierw zrób ręcznie,</p>
+</li>
+<li><span class="arithmatex">\(\displaystyle \sum_{k=2}^{\infty}\frac{1}{k^2-1}\)</span>,</li>
+<li><span class="arithmatex">\(\displaystyle \sum_{k=2}^{\infty}\frac{1}{k^2-k-1}\)</span>,</li>
+<li><span class="arithmatex">\(\displaystyle \sum_{k=0}^{\infty}k\,a^{-k}\)</span>, <span class="arithmatex">\(|a|&gt;1\)</span>,</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle \sum_{k=0}^{\infty}\frac{2k+1}{(2k)!}\)</span>.</p>
+</li>
+<li>
+<p>W pewnym eksperymencie dostaliśmy wartość <span class="arithmatex">\(1.291285\ldots\)</span>. Sprawdź na stronie <a href="https://oeis.org/">OEIS</a>, czy za tym nie stoi coś bardziej fundamentalnego. Wskazówka: na stronie wpisz <code>1,2,9,1,2,8,5</code>.</p>
+</li>
+<li>
+<p>Mamy ciąg <span class="arithmatex">\(1,2,4,7,11,16,\ldots\)</span>, gdzie widzimy, że przyrosty są zadane kolejnymi liczbami naturalnymi. Używając strony <a href="https://oeis.org/">OEIS</a>, ustal, jaka jest postać <span class="arithmatex">\(a_n\)</span>.</p>
+</li>
+<li>
+<p>Ile wynosi suma szeregu</p>
+</li>
+</ol>
+<p>$$
+   1+\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\frac{1}{4!}+\ldots\,?
+   $$</p>
+<ol>
+<li>
+<p>Wiemy, że szereg harmoniczny jest rozbieżny, więc od wartości jeden rośnie w sposób nieograniczony, choć dość powolnie. Ile wyrazów musimy zsumować, by dostać wartość 100?</p>
+</li>
+<li>
+<p>Podaj wzór na całkowitą liczbę bloków potrzebnych do stworzenia piramidy o <span class="arithmatex">\(n\)</span> stopniach. Zacznij od narysowania, jak taka konstrukcja wygląda od góry — jeden blok na warstwie 4 bloków, które z kolei leżą na warstwie 9 bloków, a te na warstwie 16 bloków itd.</p>
+</li>
+</ol>
+<p>Napisz sześć kolejnych wartości dla kolejnych <span class="arithmatex">\(n\)</span>, np.</p>
+<p>$$
+   n=1,\quad S_1=1;
+   \qquad
+   n=2,\quad S_2=1+4=5;
+   \qquad
+   n=3,\quad S_3=1+4+9=14.
+   $$</p>
+<p>Zastosuj metodę z wykładu wykorzystującą w Octave polecenie <code>diff</code>. Znajdź końcowe wyrażenie. <em>Podpowiedź:</em> będzie to wielomian trzeciego stopnia w <span class="arithmatex">\(n\)</span>. Dopiero na sam koniec możesz sprawdzić swój wynik z tym uzyskanym w Wolfram Alpha lub <a href="https://oeis.org/">OEIS</a>.</p>
+<p><strong>Uwaga:</strong> sprawdzenie odpowiedzi wcześniej oznacza, że jesteś oszustem i dosięgnie Cię klątwa faraona.</p>
+<ol>
+<li>Według pewnej legendy związanej z szachami pewien mędrzec miał poprosić króla o „skromną” nagrodę:</li>
+</ol>
+<blockquote>
+<p>„Połóż panie na pierwszym polu szachownicy jedno ziarno pszenicy (<em>grain of wheat</em>), na drugim dwa, na kolejnych cztery, osiem, szesnaście i tak do ostatniego 64. pola, za każdym razem podwajając ich liczbę.”</p>
+</blockquote>
+<p>Ile to ziaren pszenicy? Zakładając utrzymanie światowych zbiorów pszenicy z zeszłego roku (<span class="arithmatex">\(7{,}52\times10^{11}\,\mathrm{kg}\)</span>), ile czasu zajęłoby uzbieranie takiej ilości?</p>
+<ol>
+<li>
+<p>Mrówka siedząca w początku układu współrzędnych postanowiła pójść 1 metr w prawo, następnie <span class="arithmatex">\(1/2\)</span> metra w górę, następnie <span class="arithmatex">\(1/3\)</span> metra w lewo, <span class="arithmatex">\(1/4\)</span> metra w dół, <span class="arithmatex">\(1/5\)</span> metra w prawo itd. Do jakiego miejsca ostatecznie doszła? Podaj współrzędne końcowego punktu.</p>
+<p><img alt="Schemat ruchu mrówki." src="../../site_assets/mrowka.png" width="300" /></p>
+</li>
+<li>
+<p>Poniższy program w Octave wyznacza kilka pierwszych elementów <a href="https://en.wikipedia.org/wiki/Vi%C3%A8te's_formula">ciągu Viète’a</a>, który jest zbieżny do <span class="arithmatex">\(2/\pi\)</span>, i na tej podstawie wyświetla kolejne przybliżenia liczby <span class="arithmatex">\(\pi\)</span>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">N</span> <span class="p">=</span> <span class="mi">10</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">x</span> <span class="p">=</span> <span class="nb">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">);</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">=</span> <span class="nb">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">for</span> <span class="n">i</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:(</span><span class="n">N</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  <span class="n">x</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">=</span> <span class="nb">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="n">x</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="n">wynik</span> <span class="p">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span><span class="o">^</span><span class="n">i</span> <span class="o">/</span> <span class="nb">prod</span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="n">i</span><span class="p">));</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  <span class="nb">disp</span><span class="p">([</span><span class="n">i</span><span class="p">,</span> <span class="n">wynik</span><span class="p">,</span> <span class="nb">pi</span> <span class="o">-</span> <span class="n">wynik</span><span class="p">]);</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">endfor</span>
+</code></pre></div>
+<p>Uruchom ten program. Przy okazji zapamiętaj na przyszłość użycie komendy <code>disp</code>. Przy jakiej dokładności wyznaczenia liczby <span class="arithmatex">\(\pi\)</span> dokładność uzyskiwana w Octave zaczyna odbiegać od wyników?</p>
+</li>
+<li>
+<p>Zazwyczaj przy ciągach pada pytanie wyłącznie o finalną granicę, jednak możemy również zapytać, jak osiągana jest ta granica, np. poprzez zachowanie się jak funkcja potęgowa, logarytmiczna, liniowa lub wykładnicza. Na wykładzie omawiany jest przykład ze zbieżnością</p>
+<div class="arithmatex">\[
+\frac{\sin(1/n)}{1/n}.
+\]</div>
+<p>Program:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">n</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">1000</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">y</span> <span class="p">=</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">sin</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="o">./</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">plot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="s">"+;lin-lin;"</span><span class="p">);</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">]);</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">pause</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nb">semilogx</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="s">"+;log-lin;"</span><span class="p">);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">pause</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">semilogy</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="s">"+;lin-log;"</span><span class="p">);</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="nb">pause</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nb">loglog</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="s">"+;log-log;"</span><span class="p">);</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nb">pause</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nb">loglog</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">"+;log-log;"</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="n">n</span><span class="o">.^</span><span class="mi">2</span><span class="p">,</span> <span class="s">";1/n^2;"</span><span class="p">);</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="nb">pause</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="nb">loglog</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">"+;log-log;"</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="n">n</span><span class="o">.^</span><span class="mi">2</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span> <span class="s">"r;1/6n^2;"</span><span class="p">);</span>
+</code></pre></div>
+<p>Uruchom ten program i odpowiedz na pytania:</p>
+<ul>
+<li>Do czego w Octave służą polecenia <code>semilogx</code>, <code>semilogy</code> i <code>loglog</code>?</li>
+<li>Zmodyfikuj program tak, by można było za jego pomocą określić szybkość zbieżności ciągu <span class="arithmatex">\(a_n=2^{1/n}\)</span>.</li>
+<li><strong>Uwaga:</strong> w przykładzie z wykładu zastosowano odjęcie 1, aby badać zbieżność do zera. To samo będzie konieczne w analizowanym przykładzie — zrealizuj więc odjęcie 1 od podanego ciągu.</li>
+<li>
+<p>Pamiętaj również o poniższym zestawieniu na temat szybkości zbieżności, gdzie za pomocą zwykłych wykresów można <strong>szacować</strong>, czy <strong>wiodący czynnik</strong> w jakiejś zależności ma charakter:</p>
+</li>
+<li>
+<p>liniowy, <span class="arithmatex">\(f(x) = ax + b\)</span>, <code>Lin-Lin</code></p>
+</li>
+<li>logarytmiczny, <span class="arithmatex">\(f(x) = a \log x + b\)</span>, <code>Log-Lin</code></li>
+<li>wykładniczy, <span class="arithmatex">\(f(x) = b \cdot a^x\)</span>, <code>Lin-Log</code></li>
+<li>potęgowy, <span class="arithmatex">\(f(x) = ax^b\)</span>. <code>Log-Log</code></li>
+</ul>
+</li>
+</ol>
+<p>Wartości <span class="arithmatex">\(a\)</span> i <span class="arithmatex">\(b\)</span> można odczytać z parametrów linii prostej na wykresie danego rodzaju</p>
+<h2 id="zadania-do-wykonania-recznie-czesc-b">Zadania do wykonania ręcznie — część B<a class="headerlink" href="#zadania-do-wykonania-recznie-czesc-b" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Ile wynosi granica ciągu:</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle a_n=\frac{n^3+2n^2+3n+4}{4-3n+2n^2-n^3}\)</span>?</p>
+</li>
+<li><span class="arithmatex">\(\displaystyle a_n=\frac{1+\frac12+\frac14+\ldots+\frac{1}{2^n}}{1+3+5+\ldots+(2n-1)}\)</span>?</li>
+<li>
+<p><span class="arithmatex">\(\displaystyle a_n=\frac{2^{n+1}+3^{2n-1}}{4^n+9^n}\)</span>?</p>
+</li>
+<li>
+<p>Wyznacz granicę niewłaściwą</p>
+</li>
+</ol>
+<p>$$
+   \lim_{n\to\infty}\frac{n^n}{3^n}.
+   $$</p>
+<ol>
+<li>Ustal, czemu równe są granice</li>
+</ol>
+<p>$$
+   \lim_{n\to\infty}\left(1+\frac1n\right)^n,
+   \qquad
+   \lim_{n\to\infty}\left(1-\frac1n\right)^n,
+   \qquad
+   \lim_{n\to\infty}\left(1+\frac an\right)^n.
+   $$</p>
+<ol>
+<li>Podaj przykład ciągu mającego granicę niewłaściwą.</li>
+<li>W jakim przypadku znajomość granicy dwóch ciągów <span class="arithmatex">\(a_n\)</span> i <span class="arithmatex">\(b_n\)</span> nie wystarcza do stwierdzenia istnienia i ewentualnej wartości granicy ciągu <span class="arithmatex">\(a_n/b_n\)</span>?</li>
+<li>Czy granica ciągu o elementach wymiernych może być niewymierna?</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Powrót do góry
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Materiały dydaktyczne — Remigiusz Durka, UWr
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../site_assets/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
