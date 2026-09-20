@@ -1,0 +1,92 @@
+site_name: Matematyka dla ISSP
+site_description: Materiały z matematyki i obliczeń numerycznych dla studentów ISSP
+site_author: Remigiusz Durka
+site_url: https://nowitends.github.io/issp_port/
+
+docs_dir: content
+site_dir: site
+exclude_docs: |
+  README.md
+
+repo_name: nowitends/issp_port
+repo_url: https://github.com/nowitends/issp_port
+edit_uri: edit/main/content/
+
+theme:
+  name: material
+  language: pl
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Tryb ciemny
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Tryb jasny
+
+nav:
+  - Start: index.md
+  - Wolfram Alpha: pages/wolfram-alpha.md
+  - Octave/MATLAB: pages/octave_matlab.md
+  - Octave:
+      - Co to jest Octave?: pages/co-to-jest-octave.md
+      - Obsługa Octave’a: pages/obsluga-octavea.md
+      - Kalkulator naukowy: pages/kalkulator-naukowy.md
+      - Zmienne: pages/zmienne-w-octave.md
+      - Skrypty i funkcje: pages/skrypty-i-funkcje.md
+      - Wykresy: pages/octave-wykresy.md
+  - Matematyka:
+      - Liczby i operacje: pages/liczby_i_operacje.md
+      - Ciągi i szeregi: pages/ciagi_i_szeregi.md
+      - Funkcje: pages/funkcje.md
+      - Aproksymacje: pages/aproksymacje.md
+      - Pochodna (1): pages/pochodna1.md
+      - Pochodna (2): pages/pochodna2.md
+      - Całki: pages/calki.md
+      - Równania ODE: pages/ode.md
+      - Równania PDE: pages/pde.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - site_assets/extra.css
+
+extra_javascript:
+  - site_assets/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+copyright: "Materiały dydaktyczne — Remigiusz Durka, UWr"
