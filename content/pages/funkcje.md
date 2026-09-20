@@ -118,6 +118,8 @@ Dla każdej pary podaj dziedzinę i zbiór wartości funkcji wyjściowej oraz dz
 
 Przypomnienie: [wzór na zamianę podstawy logarytmów](https://en.wikipedia.org/wiki/Logarithm#Change_of_base).
 
+**Zadanie 6.** Sprawdź działanie komend **`f(g(2))`**, **`g(f(2))`** oraz **`f(f(2))`**.
+
 ### Funkcje anonimowe w Octave
 
 W Octave istnieje możliwość definiowania funkcji anonimowych — w pojedynczym wierszu, bez użycia słów kluczowych `function` i `endfunction` (zobacz: <http://dydmat.mimuw.edu.pl/matematyka-obliczeniowa/octave-podstawy>). Służy do tego operator `@`.
@@ -128,8 +130,6 @@ Na przykład, aby zdefiniować funkcje $f(x)=2x+1$ oraz $g(x)=x^2-1$, można uż
 f = @(x) 2 * x + 1;
 g = @(x) x .* x - 1;
 ```
-
-**Zadanie 6.**  Sprawdź działanie komend `f(g(2))`, `g(f(2))` oraz `f(f(2))`.
 
 **Zadanie 7.** Wyświetl na jednym rysunku wykresy funkcji $f\circ f$, $f\circ g$, $g\circ f$ i $g\circ g$ dla $-2\le x\le 2$. Do wykresu trzeba zdefiniować argumenty i użyć polecenia typu:
 

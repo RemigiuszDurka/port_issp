@@ -7,17 +7,7 @@ legacy_url: "http://users.ift.uni.wroc.pl/~rdurka/matissp/index.php/aproksymacje
 
 Aproksymacje to przybliżenia funkcji za pomocą wielomianów lub innych funkcji prostszych niż aproksymowana funkcja.
 
-GNU Octave i Gnuplot oferują narzędzia do aproksymacji danych. W Octave funkcja `polyfit(x, y, n)` wyznacza współczynniki wielomianu stopnia `n`, który w sensie najmniejszych kwadratów dopasowuje się do danych `(x, y)`.
-
-Gnuplotowe `fit` działa nieco inaczej: najpierw definiujemy model zawierający nieznane parametry, a następnie `fit` dobiera wartości tych parametrów tak, aby model możliwie dobrze opisywał dane. Model nie musi być wielomianem. Przykładowo dla dopasowania funkcji kwadratowej do dwóch kolumn danych zapisanych w pliku `measured.dat` można użyć:
-
-```gnuplot
-f(x) = a + b*x + c*x**2
-fit f(x) 'measured.dat' using 1:2 via a,b,c
-plot 'measured.dat' using 1:2, f(x)
-```
-
-Szczegóły opisuje dokumentacja polecenia [`fit` w Gnuplot](https://gnuplot.info/docs/loc7134.html).
+GNU Octave oferuje narzędzia do aproksymacji danych. W tym rozdziale będziemy używać przede wszystkim funkcji `polyfit(x, y, n)`, która wyznacza współczynniki wielomianu stopnia `n` dopasowanego do danych `(x,y)` metodą najmniejszych kwadratów. Otrzymany wielomian można następnie obliczać poleceniem `polyval` i porównywać z danymi na wykresie.
 
 Warto przypomnieć szereg Taylora, który pozwala aproksymować funkcję w pobliżu pewnego punktu za pomocą wielomianu. W szczególności, dla funkcji $f(x)$ rozwiniętej w szereg Taylora wokół punktu $x_0$ mamy
 
@@ -73,114 +63,119 @@ $$
 
 ## Zadania do wykonania ręcznie
 
-1. O pewnym wielomianie $W$ wiadomo, że $W(0)=4$ i $W(2)=-3$. Czy ten wielomian musi mieć pierwiastek?
-2. Skoro
+**Zadanie 1.** O pewnym wielomianie $W$ wiadomo, że $W(0)=4$ i $W(2)=-3$. Czy ten wielomian musi mieć pierwiastek?
 
-   $$
-   \sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
-   $$
+**Zadanie 2.** Skoro
 
-   to ile wynosi
+$$
+\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
+$$
 
-   $$
-   \lim_{x\to 0}\frac{\sin x}{x}\,?
-   $$
+to ile wynosi
 
-3. Skoro
+$$
+\lim_{x\to 0}\frac{\sin x}{x}\,?
+$$
 
-   $$
-   \cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots,
-   $$
+**Zadanie 3.** Skoro
 
-   to ile wynosi
+$$
+\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots,
+$$
 
-   $$
-   \lim_{x\to 0}\frac{1-\cos x}{x^2}\,?
-   $$
+to ile wynosi
 
-4. Skoro
+$$
+\lim_{x\to 0}\frac{1-\cos x}{x^2}\,?
+$$
 
-   $$
-   \ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\ldots,
-   $$
+**Zadanie 4.** Skoro
 
-   to ile wynosi
+$$
+\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\ldots,
+$$
 
-   $$
-   \lim_{x\to 0}\frac{\ln(1+x)}{x}\,?
-   $$
+to ile wynosi
 
-5. Przypomnij, ile wynosi rozwinięcie funkcji $e^x$. Zapisz rozwinięcie aż do piątej potęgi.
-6. Podaj analogiczne rozwinięcie $e^{-x}$.
-7. Podaj analogiczne rozwinięcie $e^{ix}$.
-8. Wyraź $e^{ix}$ jako kombinację $\sin x$ oraz $\cos x$.
-9. Podaj rozwinięcie cosinusa hiperbolicznego, wiedząc, że
+$$
+\lim_{x\to 0}\frac{\ln(1+x)}{x}\,?
+$$
 
-   $$
-   \cosh x=\frac{e^x+e^{-x}}{2}.
-   $$
+**Zadanie 5.** Przypomnij, ile wynosi rozwinięcie funkcji $e^x$. Zapisz rozwinięcie aż do piątej potęgi.
 
-10. Biorąc zadania powyżej, udowodnij poprawność słynnego wzoru Eulera:
+**Zadanie 6.** Podaj analogiczne rozwinięcie $e^{-x}$.
 
-    $$
-    e^{i\pi}+1=0.
-    $$
+**Zadanie 7.** Podaj analogiczne rozwinięcie $e^{ix}$.
+
+**Zadanie 8.** Wyraź $e^{ix}$ jako kombinację $\sin x$ oraz $\cos x$.
+
+**Zadanie 9.** Podaj rozwinięcie cosinusa hiperbolicznego, wiedząc, że
+
+$$
+\cosh x=\frac{e^x+e^{-x}}{2}.
+$$
+
+**Zadanie 10.** Biorąc zadania powyżej, udowodnij poprawność słynnego wzoru Eulera:
+
+ $$
+ e^{i\pi}+1=0.
+ $$
 
 ## Zadania do wykonania w asyście komputera
 
-1. **Octave:** Jak już wiesz,
+**Zadanie 1.** **Octave:** Jak już wiesz,
 
-   $$
-   \sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
-   \qquad
-   \cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots.
-   $$
+$$
+\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
+\qquad
+\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots.
+$$
 
-   Niech $s(x)$ będzie wielomianem, który powstaje z powyższego szeregu dla $\sin x$ po odrzuceniu wyrazów w potędze wyższej niż 5. Podobnie niech $c(x)$ będzie wielomianem, który powstaje z szeregu dla $\cos x$ po odrzuceniu wyrazów wyższego stopnia niż 5.
+Niech $s(x)$ będzie wielomianem, który powstaje z powyższego szeregu dla $\sin x$ po odrzuceniu wyrazów w potędze wyższej niż 5. Podobnie niech $c(x)$ będzie wielomianem, który powstaje z szeregu dla $\cos x$ po odrzuceniu wyrazów wyższego stopnia niż 5.
 
-   - Utwórz iloczyn
+- Utwórz iloczyn
 
-     $$
-     w(x)=s(x)\cdot s(x)+c(x)\cdot c(x),
-     $$
+  $$
+  w(x)=s(x)\cdot s(x)+c(x)\cdot c(x),
+  $$
 
-     który powinien w przybliżeniu równać się $\sin^2 x+\cos^2 x$, czyli mieć wartość 1. Jeżeli używasz Octave i polecenia `conv`, wielomiany **nie muszą mieć tego samego stopnia** — `conv` potrafi mnożyć wektory współczynników o różnej długości. Subtelność pojawia się dopiero wtedy, gdy chcemy później **dodać** otrzymane wielomiany, np. `conv(s,s)` i `conv(c,c)`: ich wektory współczynników muszą odnosić się do tych samych potęg i mieć zgodną długość. Krótszy wektor trzeba więc odpowiednio dopełnić zerami od strony najwyższych potęg.
-   - Sprawdź, że wyraz wolny $w(x)$ faktycznie równa się 1, a wszystkie pozostałe jego wyrazy stopnia $\leq 5$ równe są 0.
-   - Sprawdź, jakie wartości ma $w(x)-1$ dla `x = linspace(0, pi, 100)`.
+  który powinien w przybliżeniu równać się $\sin^2 x+\cos^2 x$, czyli mieć wartość 1. Jeżeli używasz Octave i polecenia `conv`, wielomiany **nie muszą mieć tego samego stopnia** — `conv` potrafi mnożyć wektory współczynników o różnej długości. Subtelność pojawia się dopiero wtedy, gdy chcemy później **dodać** otrzymane wielomiany, np. `conv(s,s)` i `conv(c,c)`: ich wektory współczynników muszą odnosić się do tych samych potęg i mieć zgodną długość. Krótszy wektor trzeba więc odpowiednio dopełnić zerami od strony najwyższych potęg.
+- Sprawdź, że wyraz wolny $w(x)$ faktycznie równa się 1, a wszystkie pozostałe jego wyrazy stopnia $\leq 5$ równe są 0.
+- Sprawdź, jakie wartości ma $w(x)-1$ dla `x = linspace(0, pi, 100)`.
 
-2. **Ważne zadanie:** Niech w Octave
+**Zadanie 2.** **Ważne zadanie:** Niech w Octave
 
-   ```octave
-   x = 0:0.1:3;
-   y = exp(x);
-   ```
+```octave
+x = 0:0.1:3;
+y = exp(x);
+```
 
-   - Za pomocą polecenia `polyfit` dopasuj do `(x, y)` wielomiany stopnia od 1 do 5. Czy współczynniki tych wielomianów w wyrazach o potędze $\leq 3$ dążą do współczynników wielomianu uzyskanego z rozwinięcia $\exp x$ względem $x$ wokół 0, tj.
+- Za pomocą polecenia `polyfit` dopasuj do `(x, y)` wielomiany stopnia od 1 do 5. Czy współczynniki tych wielomianów w wyrazach o potędze $\leq 3$ dążą do współczynników wielomianu uzyskanego z rozwinięcia $\exp x$ względem $x$ wokół 0, tj.
 
-     $$
-     \exp x=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\ldots\,?
-     $$
+  $$
+  \exp x=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\ldots\,?
+  $$
 
-     Wskazówka — szybka komenda do wyświetlenia jednego z tych wielomianów:
+  Wskazówka — szybka komenda do wyświetlenia jednego z tych wielomianów:
 
-     ```octave
-     polyout(polyfit(x, y, 1));
-     ```
+  ```octave
+  polyout(polyfit(x, y, 1));
+  ```
 
-   - Wyświetl $y(x)$ oraz kolejne wielomiany aproksymacyjne otrzymane w poprzednim punkcie. Czy wykresy wielomianów wyższych stopni coraz lepiej odpowiadają aproksymowanej funkcji na zadanym przedziale?
+- Wyświetl $y(x)$ oraz kolejne wielomiany aproksymacyjne otrzymane w poprzednim punkcie. Czy wykresy wielomianów wyższych stopni coraz lepiej odpowiadają aproksymowanej funkcji na zadanym przedziale?
 
-     Wskazówka:
+  Wskazówka:
 
-     ```octave
-     plot(x, polyval(polyfit(x, y, 1), x), "+", x, y);
-     ```
+  ```octave
+  plot(x, polyval(polyfit(x, y, 1), x), "+", x, y);
+  ```
 
-3. **Bardzo ważne zadanie:** Dany jest ciąg
+**Zadanie 3.** **Bardzo ważne zadanie:** Dany jest ciąg
 
-   ```text
-   [9, 4, 11, 36, 85, 164, 279, 436, 641, 900]
-   ```
+```text
+[9, 4, 11, 36, 85, 164, 279, 436, 641, 900]
+```
 
-   Wyrazy tego ciągu zostały wygenerowane za pomocą pewnego wielomianu niewielkiego stopnia, tj. $a_n=f(n)$ dla $n=1,2,\ldots,10$, przy czym $f(n)$ jest wielomianem zmiennej $n$. Pytanie brzmi: jaki to wielomian?
+Wyrazy tego ciągu zostały wygenerowane za pomocą pewnego wielomianu niewielkiego stopnia, tj. $a_n=f(n)$ dla $n=1,2,\ldots,10$, przy czym $f(n)$ jest wielomianem zmiennej $n$. Pytanie brzmi: jaki to wielomian?
 
-   - Zapoznaj się z dokumentacją funkcji `polyfit`: wpisz w Octave `help polyfit` lub zajrzyj do [dokumentacji GNU Octave](https://docs.octave.org/latest/Polynomial-Interpolation.html), a potem wykonaj odpowiednie obliczenia, używając `polyfit`.
+- Zapoznaj się z dokumentacją funkcji `polyfit`: wpisz w Octave `help polyfit` lub zajrzyj do [dokumentacji GNU Octave](https://docs.octave.org/latest/Polynomial-Interpolation.html), a potem wykonaj odpowiednie obliczenia, używając `polyfit`.

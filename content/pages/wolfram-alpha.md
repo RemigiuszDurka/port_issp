@@ -135,65 +135,76 @@ Wolfram Alpha ma wersję podstawową oraz płatne plany Pro z dodatkowymi funkcj
 
 ## Zadania B — matematyka
 
-1. Uprość (*simplify*) iloraz
+**Zadanie B1.** Uprość (*simplify*) iloraz
 
-   $$
-   \frac{x^3-1}{x-1}.
-   $$
+$$
+\frac{x^3-1}{x-1}.
+$$
 
-2. Narysuj wykres funkcji
+**Zadanie B2.** Narysuj wykres funkcji
 
-   $$
-   \frac{\sin(x^2)}{x}.
-   $$
+$$
+\frac{\sin(x^2)}{x}.
+$$
 
-3. Narysuj wykres tej samej funkcji obejmujący przedział $10\le x\le20$.
-4. Sprawdź, jak wyrazić $\sin(2\alpha)$ jako funkcję $\sin\alpha$ i $\cos\alpha$.
-5. Oblicz sumę (*sum*) odwrotności kolejnych liczb naturalnych od 1 do 10000:
+**Zadanie B3.** Narysuj wykres tej samej funkcji obejmujący przedział $10\le x\le20$.
 
-   $$
-   1+\frac12+\frac13+\ldots+\frac{1}{10000}.
-   $$
+**Zadanie B4.** Sprawdź, jak wyrazić $\sin(2\alpha)$ jako funkcję $\sin\alpha$ i $\cos\alpha$.
 
-6. Oblicz sumę odwrotności kwadratów wszystkich liczb naturalnych:
+**Zadanie B5.** Oblicz sumę (*sum*) odwrotności kolejnych liczb naturalnych od 1 do 10000:
 
-   $$
-   1+\frac14+\frac19+\frac1{16}+\frac1{25}+\ldots
-   $$
+$$
+1+\frac12+\frac13+\ldots+\frac{1}{10000}.
+$$
 
-7. Rozłóż na czynniki pierwsze (*factorize*) liczbę `1234567890`.
-8. Rozwiń (*expand*) wyrażenie $(x+1)(x-2)$.
-9. Znajdź postać iloczynową (*factor*) wyrażenia
+**Zadanie B6.** Oblicz sumę odwrotności kwadratów wszystkich liczb naturalnych:
 
-   $$
-   2-5x-3x^2.
-   $$
+$$
+1+\frac14+\frac19+\frac1{16}+\frac1{25}+\ldots
+$$
 
-10. Na ile sposobów można wybrać (*choose*) 6 różnych liczb z 49?
-11. Ile jest permutacji zbioru 15-elementowego? Wskazówka: użyj słowa `factorial` lub symbolu `!`.
-12. Narysuj zbiór rozwiązań równania $x^2+y^2=1$.
-13. Narysuj zbiór rozwiązań równania $x^2+y^3=1$.
-14. Znajdź wszystkie asymptoty funkcji
+**Zadanie B7.** Rozłóż na czynniki pierwsze (*factorize*) liczbę `1234567890`.
 
-    $$
-    f(x)=\frac{x^2-1}{x^2-4}.
-    $$
+**Zadanie B8.** Rozwiń (*expand*) wyrażenie $(x+1)(x-2)$.
 
-15. Znajdź wszystkie asymptoty funkcji
+**Zadanie B9.** Znajdź postać iloczynową (*factor*) wyrażenia
 
-    $$
-    f(x)=\frac{x^2-1}{x-2}.
-    $$
+$$
+2-5x-3x^2.
+$$
 
-16. Rozwiąż (*solve*) równanie $\sin x=\cos x$.
-17. Rozwiąż równanie $\sin x=\cos(2x)$.
-18. Rozwiąż równanie $\cos x=x/\pi$.
-19. Narysuj wykres funkcji
+**Zadanie B10.** Na ile sposobów można wybrać (*choose*) 6 różnych liczb z 49?
 
-    $$
-    f(x,y)=\frac{\sin\!\left(\sqrt{x^2+y^2}\right)}{\sqrt{x^2+y^2}}.
-    $$
+**Zadanie B11.** Ile jest permutacji zbioru 15-elementowego? Wskazówka: użyj słowa `factorial` lub symbolu `!`.
 
-    Na kolejnych zajęciach wygenerujesz analogiczny wykres w Octave poleceniem `sombrero`.
+**Zadanie B12.** Narysuj zbiór rozwiązań równania $x^2+y^2=1$.
 
-    ![Przykładowy wykres funkcji dwóch zmiennych.](../site_assets/hello_octave-e1633600540199.png)
+**Zadanie B13.** Narysuj zbiór rozwiązań równania $x^2+y^3=1$.
+
+**Zadanie B14.** Znajdź wszystkie asymptoty funkcji
+
+ $$
+ f(x)=\frac{x^2-1}{x^2-4}.
+ $$
+
+**Zadanie B15.** Znajdź wszystkie asymptoty funkcji
+
+ $$
+ f(x)=\frac{x^2-1}{x-2}.
+ $$
+
+**Zadanie B16.** Rozwiąż (*solve*) równanie $\sin x=\cos x$.
+
+**Zadanie B17.** Rozwiąż równanie $\sin x=\cos(2x)$.
+
+**Zadanie B18.** Rozwiąż równanie $\cos x=x/\pi$.
+
+**Zadanie B19.** Narysuj wykres funkcji
+
+ $$
+ f(x,y)=\frac{\sin\!\left(\sqrt{x^2+y^2}\right)}{\sqrt{x^2+y^2}}.
+ $$
+
+ Na kolejnych zajęciach wygenerujesz analogiczny wykres w Octave poleceniem `sombrero`.
+
+ ![Przykładowy wykres funkcji dwóch zmiennych.](../site_assets/hello_octave-e1633600540199.png)

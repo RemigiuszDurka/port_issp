@@ -59,7 +59,7 @@ gdzie $\frac{dx}{dt}=\dot{x},\frac{d^2x}{dt^2}=\ddot{x},\ldots,\frac{d^nx}{dt^n}
 
 ## Dodatkowe zadania
 
-**Zadanie 1.** Zmiana prędkości pewnego samochodu od momentu wyłączenia silnika do chwili, w której samochód się zatrzymuje, opisana jest równaniem
+**Zadanie D.** Zmiana prędkości pewnego samochodu od momentu wyłączenia silnika do chwili, w której samochód się zatrzymuje, opisana jest równaniem
 
 $$
 \frac{dv}{dt}=-(b+cv^2),
@@ -71,7 +71,7 @@ gdzie $v$ jest prędkością samochodu w metrach na sekundę, a $t$ — czasem w
 - Zakładając prędkość początkową $100\,\mathrm{km/h}$, znajdź drogę, po której samochód się zatrzyma.
 - O ile zmieniłaby się droga do zatrzymania samochodu, gdyby zaniedbać opór powietrza, czyli przyjąć $c=0$?
 
-**Zadanie 2.** Przyporządkuj poniższe pola kierunków odpowiednim równaniom.
+**Zadanie E.** Przyporządkuj poniższe pola kierunków odpowiednim równaniom.
 
 ![Pole kierunków A.](../site_assets/2ode_SF-270x300.png){ width="260" }
 
@@ -82,84 +82,3 @@ gdzie $v$ jest prędkością samochodu w metrach na sekundę, a $t$ — czasem w
 - $\displaystyle \frac{dx}{dt}=1$
 - $\displaystyle \frac{dx}{dt}=t$
 - $\displaystyle \frac{dx}{dt}=tx$
-
-**Zadanie 3.** Zapoznaj się z [symulacją on-line atraktora Lorenza](http://www.malinc.se/m/Lorenz.php).
-
-- Poeksperymentuj z parametrami układu równań.
-- Jaki efekt ilustruje symulacja „niebieskich motyli” w „małym pudełku” (*small cube*)?
-- Jaki efekt ilustruje symulacja „niebieskich motyli” w „dużym pudełku” (*large cube*)?
-
-**Zadanie 4.** Rozwiąż równania Lorenza
-
-$$
-\begin{aligned}
-\frac{dx}{dt} &= -\sigma x+\sigma y,\\
-\frac{dy}{dt} &= -xz+rx-y,\\
-\frac{dz}{dt} &= xy-bz,
-\end{aligned}
-$$
-
-dla parametrów $\sigma=10$, $r=28$, $b=2.5$, z dowolnym warunkiem początkowym, np. takim, dla którego $-50\le x,y,z\le50$.
-
-Skopiuj do swojego katalogu roboczego plik `lorenz.m`:
-
-```octave
-function dx = lorenz(xx, t)
-  dx = zeros(3, 1);  # rezerwacja miejsca
-  global sigma;
-  global r;
-  global b;
-
-  x = xx(1);  # ułatwienie zapisu
-  y = xx(2);
-  z = xx(3);
-
-  dx(1) = ...  # uzupełnij
-  dx(2) = ...  # uzupełnij
-  dx(3) = ...  # uzupełnij
-endfunction
-```
-
-Uzupełnij definicję funkcji `lorenz` — trzy wykropkowane instrukcje — zgodnie z układem równań różniczkowych.
-
-Następnie utwórz plik `make_lorenz.m`:
-
-```octave
-global sigma;
-global r;
-global b;
-
-sigma = ...;  # uzupełnij
-r = ...;      # uzupełnij
-b = ...;      # uzupełnij
-
-x0 = ...;  # uzupełnij
-y0 = ...;  # uzupełnij
-z0 = ...;  # uzupełnij
-
-N = 40000;
-t = linspace(0, 40, N);
-sol = lsode("lorenz", [x0, y0, z0], t);
-
-plot3(sol(1:N, 1), sol(1:N, 2), sol(1:N, 3), "r", "linewidth", 2);
-xlabel("x", "fontsize", 15);
-ylabel("y", "fontsize", 15);
-zlabel("z", "fontsize", 15);
-set(gca, "fontsize", 16);
-```
-
-Uzupełnij wartości parametrów równania $(\sigma,r,b)$ oraz warunku początkowego $(x_0,y_0,z_0)$ i uruchom skrypt. Porównaj kształt rozwiązania z tym, jak generuje je program z poprzedniego zadania.
-
-- Wygeneruj rozwiązania dla dwóch zupełnie różnych warunków początkowych, np. $(1,1,1)$ i $(20,-20,10)$. Czy oba zbiegają do tego samego *atraktora*?
-- Wygeneruj rozwiązania dla dwóch bardzo bliskich warunków początkowych $(x_0,y_0,z_0)$, np. $(1,1,1)$ oraz $(1,1,1.000001)$.
-- Zbadaj różnicę między oboma rozwiązaniami w funkcji czasu, np. instrukcją:
-
-```octave
-plot(t, sol(:, 1) - sol2(:, 1));
-```
-
-- Następnie użyj wykresu półlogarytmicznego:
-
-```octave
-semilogy(t, abs(sol(:, 1) - sol2(:, 1)));
-```

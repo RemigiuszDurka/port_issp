@@ -4,7 +4,7 @@ title: "MATLAB"
 
 # MATLAB i Octave
 
-W tej części kursu podstawowym środowiskiem pozostaje **GNU Octave**. MATLAB pojawia się osobno dlatego, że oba środowiska mają bardzo podobny sposób zapisu podstawowych obliczeń numerycznych, ale nie są tym samym programem. Ta strona ma przede wszystkim pokazać, **co jest wspólne, gdzie pojawiają się różnice i jak sprawdzać przenośność kodu**.
+**MATLAB** jest jednym z najważniejszych środowisk obliczeniowych wykorzystywanych w nauce, technice i zastosowaniach inżynierskich. Jest jednak oprogramowaniem komercyjnym i płatnym, choć studentom często oferowany jest bezpłatny lub ograniczony dostęp w ramach licencji uczelnianych i wersji online. Na tym kursie będziemy korzystać przede wszystkim z **GNU Octave** — darmowego i otwartoźródłowego środowiska do obliczeń numerycznych, którego składnia jest w dużej mierze zgodna z MATLAB-em. Dzięki temu większość podstawowych umiejętności zdobytych w Octave można później bez trudu przenieść do MATLAB-a. Na tej stronie porównamy oba środowiska, wskazując **co jest wspólne, gdzie pojawiają się różnice i jak sprawdzać przenośność kodu**.
 
 ## MATLAB
 
