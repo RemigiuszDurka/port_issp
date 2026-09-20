@@ -1,15 +1,15 @@
 site_name: Matematyka dla ISSP
 site_description: Materiały z matematyki i obliczeń numerycznych dla studentów ISSP
 site_author: Remigiusz Durka
-site_url: https://nowitends.github.io/issp_port/
+site_url: https://remigiuszdurka.github.io/issp_port/
 
 docs_dir: content
 site_dir: site
 exclude_docs: |
   README.md
 
-repo_name: nowitends/issp_port
-repo_url: https://github.com/nowitends/issp_port
+repo_name: RemigiuszDurka/port_issp/
+repo_url: https://github.com/RemigiuszDurka/port_issp/
 edit_uri: edit/main/content/
 
 theme:
