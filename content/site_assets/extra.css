@@ -1,0 +1,168 @@
+:root {
+  --md-text-font: "Inter", "Segoe UI", sans-serif;
+  --matiss-surface: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-primary-fg-color) 6%);
+  --matiss-border: color-mix(in srgb, var(--md-default-fg-color) 16%, transparent);
+}
+
+[data-md-color-scheme="default"] {
+  --md-code-bg-color: #f2f4f6;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-code-bg-color: #252930;
+}
+
+.md-grid {
+  max-width: 78rem;
+}
+
+.md-typeset h1 {
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.md-typeset h2 {
+  margin-top: 2.2em;
+  font-weight: 700;
+}
+
+.md-typeset h3 {
+  margin-top: 1.8em;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(18rem, 0.8fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1rem 0 2.5rem;
+}
+
+.hero-copy,
+.hero-note,
+.course-card {
+  border: 1px solid var(--matiss-border);
+  border-radius: 0.9rem;
+  background: var(--matiss-surface);
+}
+
+.hero-copy {
+  padding: 1.4rem 1.5rem 1.5rem;
+}
+
+.hero-note {
+  padding: 1.2rem 1.3rem;
+  border-top: 0.25rem solid var(--md-accent-fg-color);
+}
+
+.hero-copy h2,
+.hero-note h3,
+.course-card h3 {
+  margin-top: 0;
+}
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2.5rem;
+}
+
+.course-card {
+  padding: 1.2rem 1.3rem;
+}
+
+.course-card p:last-child {
+  margin-bottom: 0;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.65rem;
+}
+
+/* --- Mathematical and code content ------------------------------------ */
+
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.md-typeset .highlight {
+  margin: 1.05rem 0 1.35rem;
+}
+
+.md-typeset .highlight pre,
+.md-typeset pre {
+  border: 1px solid var(--matiss-border);
+  border-radius: 0.55rem;
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset pre > code {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  background: transparent;
+}
+
+.md-typeset :not(pre) > code {
+  padding: 0.08em 0.32em;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+  border-radius: 0.28rem;
+  background: var(--md-code-bg-color);
+  font-size: 0.84em;
+  font-weight: 550;
+}
+
+/* --- Teaching figures -------------------------------------------------- */
+
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.45rem;
+}
+
+/* Legacy figure classes are kept until all migrated pages use width="...". */
+.md-typeset .matiss-figure {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 1.35rem auto;
+  border: 1px solid var(--matiss-border);
+  background: var(--matiss-surface);
+}
+
+.md-typeset .matiss-figure--small {
+  max-width: 22rem;
+}
+
+.md-typeset .matiss-figure--medium {
+  max-width: 32rem;
+}
+
+.md-typeset .matiss-figure--large {
+  max-width: 38rem;
+}
+
+.md-typeset .matiss-figure--wide {
+  max-width: 48rem;
+}
+
+.md-typeset blockquote {
+  margin: 1.1rem 0 1.35rem;
+}
+
+@media screen and (max-width: 60rem) {
+  .hero-grid,
+  .course-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .matiss-figure--small,
+  .md-typeset .matiss-figure--medium,
+  .md-typeset .matiss-figure--large,
+  .md-typeset .matiss-figure--wide {
+    max-width: 100%;
+  }
+}
