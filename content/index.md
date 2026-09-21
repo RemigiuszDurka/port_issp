@@ -12,7 +12,7 @@ Niniejszy kurs Matematyki opracowany został przed laty przez
 
 Niniejsza wersja stanowi przeorganizowanie materiału z licznymi zmianami niektórych fragmentów oraz dodatkowymi zadaniami podczas prowadzenie tego kursu przez
 
-- nowego wykładowcę (*dr hab. R. Durka*)
+- nowego wykładowcę **(*dr hab. R. Durka*)**
 
 Mimo rozwoju technologii i pojawienia się nowych narzędzi informatycznych, kurs ten wciąż pozostaje aktualny i użyteczny. Wykorzystuje on bowiem narzędzia informatyczne do nauki matematyki, pozwalając studentom na zapoznanie się podstawami obsługi komputerowych technologii obliczeniowych, które są niezbędne w dzisiejszym świecie nauki i inżynierii.
 
@@ -31,7 +31,6 @@ Kurs realizowany jest w wymiarze 75 godzin na semestr, z czego
 
 ---
 
-W kolejnych semestrach realizowane będą następujące zagadnienia.
 
 [Semestr 1:](site_assets/MatDlaInf-2025.pptx)
 
