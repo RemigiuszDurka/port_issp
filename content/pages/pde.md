@@ -49,21 +49,21 @@ Przyporządkuj równaniom odpowiedni opis.
 
 ## Zadania do wykonania ręcznie
 
-**A. Oblicz możliwe pochodne cząstkowe dla:**
+**Zadanie A.** Oblicz możliwe pochodne cząstkowe dla:
 
 1. $f(x,y,z)=x^2+yz$,
 2. $f(x,y,z)=z\ln(xy)$,
 3. $f(x,y)=\dfrac{x}{y}$,
 4. $R(t,s)=s^2\sqrt{t}$.
 
-**B. Oblicz różniczkę $df$ dla:**
+**Zadanie B.** Oblicz różniczkę $df$ dla:
 
 1. $f(x,y,z)=x^2+yz$,
 2. $f(x,y,z)=z\ln(xy)$,
 3. $f(x,y)=\dfrac{x}{y}$,
 4. $R(t,s)=s^2\sqrt{t}$.
 
-**C. Przepisz równania, używając $u=u(x,t)$ oraz pochodnych w jawnej postaci, czyli**
+**Zadanie C.** Przepisz równania, używając $u=u(x,t)$ oraz pochodnych w jawnej postaci, czyli
 
 $$
 \frac{\partial u}{\partial t}=u_t,
@@ -81,7 +81,7 @@ itd.
 2. $\displaystyle u_t=u^3u_{xxx}$
 3. $\displaystyle (1-u_t^2)u_{xx}+2u_xu_tu_{xt}-(1+u_x^2)u_{tt}=0$
 
-**D. Sprawdź, czy funkcja**
+**Zadanie D.** Sprawdź, czy funkcja
 
 $$
 \psi(t,x)=A\cos(\omega t+kx)

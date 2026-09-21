@@ -179,23 +179,27 @@ Do wizualizacji danych i przygotowywania rysunków przydatne są również m.in.
 
 ## Zadania
 
-1. Napisz program generujący wykres
+**Zadanie 1.** Napisz program generujący wykres
 
-   $$
-   f(x)=\sqrt{1-x^2},
-   \qquad -1\le x\le1,
-   $$
+$$
+f(x)=\sqrt{1-x^2},
+\qquad -1\le x\le1,
+$$
 
-   wraz z tytułem i opisami osi.
+wraz z tytułem i opisami osi.
 
-2. Na podstawie poprzedniego zadania narysuj cały okrąg, sklejając dwie gałęzie funkcji. Wyświetlone „spłaszczone koło” popraw poleceniem używanym w pierwotnej wersji tego ćwiczenia:
+**Zadanie 2.** Na podstawie poprzedniego zadania narysuj cały okrąg, sklejając dwie gałęzie funkcji. Wyświetlone „spłaszczone koło” popraw poleceniem używanym w pierwotnej wersji tego ćwiczenia:
 
-   ```octave
-   axis("square");
-   ```
+```octave
+axis("square");
+```
 
-3. Zmieniając zakres argumentów i wartości, narysuj tylko prawą górną ćwiartkę okręgu.
-4. Zapisz wykres okręgu do pliku PNG.
-5. Porównaj metodę sklejania dwóch funkcji z parametryzacją przez kąt ($\varphi$). Która metoda daje bardziej równomierne rozmieszczenie punktów?
-6. Narysuj wykresy kilku funkcji na jednym rysunku i dodaj legendę.
-7. Sprawdź działanie `xlim`, `ylim`, `axis("square")`, `axis("equal")` i `grid on`. Porównaj różnicę między `square` i `equal`.
+**Zadanie 3.** Zmieniając zakres argumentów i wartości, narysuj tylko prawą górną ćwiartkę okręgu.
+
+**Zadanie 4.** Zapisz wykres okręgu do pliku PNG.
+
+**Zadanie 5.** Porównaj metodę sklejania dwóch funkcji z parametryzacją przez kąt ($\varphi$). Która metoda daje bardziej równomierne rozmieszczenie punktów?
+
+**Zadanie 6.** Narysuj wykresy kilku funkcji na jednym rysunku i dodaj legendę.
+
+**Zadanie 7.** Sprawdź działanie `xlim`, `ylim`, `axis("square")`, `axis("equal")` i `grid on`. Porównaj różnicę między `square` i `equal`.

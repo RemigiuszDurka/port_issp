@@ -31,14 +31,14 @@ gdzie $\frac{dx}{dt}=\dot{x},\frac{d^2x}{dt^2}=\ddot{x},\ldots,\frac{d^nx}{dt^n}
 
 ## Zadania do wykonania ręcznie
 
-**A. Jaki jest rząd następujących równań różniczkowych zwyczajnych?**
+**Zadanie A.** Jaki jest rząd następujących równań różniczkowych zwyczajnych?
 
 1. $\displaystyle \frac{dx}{dt}=x^2$
 2. $\displaystyle \left(\frac{dx}{dt}\right)^2=x$
 3. $\displaystyle \frac{d^2x}{dt^2}=\left(\frac{dx}{dt}\right)^3$
 4. $\displaystyle x+\frac{dx}{dt}\frac{d^2x}{dt^2}=0$
 
-**B. Rozwiąż równania różniczkowe pierwszego rzędu metodą rozdzielania zmiennych:**
+**Zadanie B.** Rozwiąż równania różniczkowe pierwszego rzędu metodą rozdzielania zmiennych:
 
 - a) $\displaystyle \frac{dy}{dx}=\frac{x}{y}$
 - b) $\displaystyle \frac{dy}{dx}=\frac{y}{x}$
@@ -47,7 +47,7 @@ gdzie $\frac{dx}{dt}=\dot{x},\frac{d^2x}{dt^2}=\ddot{x},\ldots,\frac{d^nx}{dt^n}
 - e) $\displaystyle \frac{dy}{dx}=\sqrt{x}$
 - f) $\displaystyle y\,dx+x\,dy=0$
 
-**C. Rozwiąż równania różniczkowe drugiego rzędu:**
+**Zadanie C.** Rozwiąż równania różniczkowe drugiego rzędu:
 
 - a) $\displaystyle \frac{d^2x}{dt^2}-a=0$
 - b) $\displaystyle \frac{d^2y}{dx^2}-\frac{dy}{dx}=0$
@@ -56,8 +56,6 @@ gdzie $\frac{dx}{dt}=\dot{x},\frac{d^2x}{dt^2}=\ddot{x},\ldots,\frac{d^nx}{dt^n}
 - e) $y''-4y'+4y=0$, przy warunkach $y(0)=1$ oraz $y'(0)=1$
 - f) $\displaystyle \frac{d^2y}{dx^2}=\omega^2y$
 - g) $\displaystyle \frac{d^2y}{dx^2}=-\omega^2y$
-
-## Dodatkowe zadania
 
 **Zadanie D.** Zmiana prędkości pewnego samochodu od momentu wyłączenia silnika do chwili, w której samochód się zatrzymuje, opisana jest równaniem
 

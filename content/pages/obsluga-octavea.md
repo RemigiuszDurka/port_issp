@@ -173,13 +173,20 @@ Do ćwiczeń można wykorzystać również środowisko działające w przegląda
 [Uruchom Octave Online](https://octave-online.net/){ .md-button .md-button--primary }
 
 
-## Ćwiczenia
+## Zadania
 
-1. Uruchom Octave i wykonaj kilka prostych poleceń.
-2. Za pomocą `↑` i `↓` wróć do wcześniejszych poleceń i zmodyfikuj jedno z nich.
-3. Użyj `Ctrl+R`, aby odnaleźć wcześniejsze polecenie po fragmencie tekstu.
-4. Użyj `Tab`, aby uzupełnić nazwę funkcji `roots` lub `plot`.
-5. Utwórz plik o długiej nazwie i sprawdź autouzupełnianie jego nazwy za pomocą `Tab`.
-6. Wyświetl pomoc dla poleceń `format`, `plot` i `roots`.
-7. Sprawdź bieżący katalog poleceniem `pwd` i jego zawartość poleceniem `ls`.
-8. Utwórz katalog roboczy dla kursu i przejdź do niego za pomocą `cd`.
+**Zadanie 1.** Uruchom Octave i wykonaj kilka prostych poleceń.
+
+**Zadanie 2.** Za pomocą `↑` i `↓` wróć do wcześniejszych poleceń i zmodyfikuj jedno z nich.
+
+**Zadanie 3.** Użyj `Ctrl+R`, aby odnaleźć wcześniejsze polecenie po fragmencie tekstu.
+
+**Zadanie 4.** Użyj `Tab`, aby uzupełnić nazwę funkcji `roots` lub `plot`.
+
+**Zadanie 5.** Utwórz plik o długiej nazwie i sprawdź autouzupełnianie jego nazwy za pomocą `Tab`.
+
+**Zadanie 6.** Wyświetl pomoc dla poleceń `format`, `plot` i `roots`.
+
+**Zadanie 7.** Sprawdź bieżący katalog poleceniem `pwd` i jego zawartość poleceniem `ls`.
+
+**Zadanie 8.** Utwórz katalog roboczy dla kursu i przejdź do niego za pomocą `cd`.

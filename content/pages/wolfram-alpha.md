@@ -135,71 +135,71 @@ Wolfram Alpha ma wersję podstawową oraz płatne plany Pro z dodatkowymi funkcj
 
 ## Zadania B — matematyka
 
-**Zadanie B1.** Uprość (*simplify*) iloraz
+**1.** Uprość (*simplify*) iloraz
 
 $$
 \frac{x^3-1}{x-1}.
 $$
 
-**Zadanie B2.** Narysuj wykres funkcji
+**2.** Narysuj wykres funkcji
 
 $$
 \frac{\sin(x^2)}{x}.
 $$
 
-**Zadanie B3.** Narysuj wykres tej samej funkcji obejmujący przedział $10\le x\le20$.
+**3.** Narysuj wykres tej samej funkcji obejmujący przedział $10\le x\le20$.
 
-**Zadanie B4.** Sprawdź, jak wyrazić $\sin(2\alpha)$ jako funkcję $\sin\alpha$ i $\cos\alpha$.
+**4.** Sprawdź, jak wyrazić $\sin(2\alpha)$ jako funkcję $\sin\alpha$ i $\cos\alpha$.
 
-**Zadanie B5.** Oblicz sumę (*sum*) odwrotności kolejnych liczb naturalnych od 1 do 10000:
+**5.** Oblicz sumę (*sum*) odwrotności kolejnych liczb naturalnych od 1 do 10000:
 
 $$
 1+\frac12+\frac13+\ldots+\frac{1}{10000}.
 $$
 
-**Zadanie B6.** Oblicz sumę odwrotności kwadratów wszystkich liczb naturalnych:
+**6.** Oblicz sumę odwrotności kwadratów wszystkich liczb naturalnych:
 
 $$
 1+\frac14+\frac19+\frac1{16}+\frac1{25}+\ldots
 $$
 
-**Zadanie B7.** Rozłóż na czynniki pierwsze (*factorize*) liczbę `1234567890`.
+**7.** Rozłóż na czynniki pierwsze (*factorize*) liczbę `1234567890`.
 
-**Zadanie B8.** Rozwiń (*expand*) wyrażenie $(x+1)(x-2)$.
+**8.** Rozwiń (*expand*) wyrażenie $(x+1)(x-2)$.
 
-**Zadanie B9.** Znajdź postać iloczynową (*factor*) wyrażenia
+**9.** Znajdź postać iloczynową (*factor*) wyrażenia
 
 $$
 2-5x-3x^2.
 $$
 
-**Zadanie B10.** Na ile sposobów można wybrać (*choose*) 6 różnych liczb z 49?
+**10.** Na ile sposobów można wybrać (*choose*) 6 różnych liczb z 49?
 
-**Zadanie B11.** Ile jest permutacji zbioru 15-elementowego? Wskazówka: użyj słowa `factorial` lub symbolu `!`.
+**11.** Ile jest permutacji zbioru 15-elementowego? Wskazówka: użyj słowa `factorial` lub symbolu `!`.
 
-**Zadanie B12.** Narysuj zbiór rozwiązań równania $x^2+y^2=1$.
+**12.** Narysuj zbiór rozwiązań równania $x^2+y^2=1$.
 
-**Zadanie B13.** Narysuj zbiór rozwiązań równania $x^2+y^3=1$.
+**13.** Narysuj zbiór rozwiązań równania $x^2+y^3=1$.
 
-**Zadanie B14.** Znajdź wszystkie asymptoty funkcji
+**14.** Znajdź wszystkie asymptoty funkcji
 
  $$
  f(x)=\frac{x^2-1}{x^2-4}.
  $$
 
-**Zadanie B15.** Znajdź wszystkie asymptoty funkcji
+**15.** Znajdź wszystkie asymptoty funkcji
 
  $$
  f(x)=\frac{x^2-1}{x-2}.
  $$
 
-**Zadanie B16.** Rozwiąż (*solve*) równanie $\sin x=\cos x$.
+**16.** Rozwiąż (*solve*) równanie $\sin x=\cos x$.
 
-**Zadanie B17.** Rozwiąż równanie $\sin x=\cos(2x)$.
+**17.** Rozwiąż równanie $\sin x=\cos(2x)$.
 
-**Zadanie B18.** Rozwiąż równanie $\cos x=x/\pi$.
+**18.** Rozwiąż równanie $\cos x=x/\pi$.
 
-**Zadanie B19.** Narysuj wykres funkcji
+**19.** Narysuj wykres funkcji
 
  $$
  f(x,y)=\frac{\sin\!\left(\sqrt{x^2+y^2}\right)}{\sqrt{x^2+y^2}}.

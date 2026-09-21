@@ -322,76 +322,77 @@ Panel *Workspace* pozwala szybko sprawdzić, jakie zmienne istnieją, jaki mają
 
 ## Quiz
 
-1. Czym różnią się w Octave następujące zmienne?
+**1.** Czym różnią się w Octave następujące zmienne?
 
-   ```octave
-   a = 1
-   b = 1.0
-   c = 1e0
-   ```
+```octave
+a = 1
+b = 1.0
+c = 1e0
+```
 
-   Czy mają tę samą wartość? Czy są reprezentowane w ten sam sposób?
+Czy mają tę samą wartość? Czy są reprezentowane w ten sam sposób?
 
-2. Jak w Octave zapisuje się wektory wierszowe?
+**2.** Jak w Octave zapisuje się wektory wierszowe?
 
-3. Jak w Octave zapisuje się wektory kolumnowe?
+**3.** Jak w Octave zapisuje się wektory kolumnowe?
 
-4. Czym różnią się następujące zmienne?
+**4.** Czym różnią się następujące zmienne?
 
-   ```octave
-   a = [1 2 3];
-   b = [1, 2, 3];
-   c = [1; 2; 3];
-   ```
+```octave
+a = [1 2 3];
+b = [1, 2, 3];
+c = [1; 2; 3];
+```
 
-5. Jaki jest związek skalarów, wektorów wierszowych i wektorów kolumnowych z macierzami?
+**5.** Jaki jest związek skalarów, wektorów wierszowych i wektorów kolumnowych z macierzami?
 
-6. Co to są zakresy? Czym różnią się od jawnie zapisanych wektorów i dlaczego są wygodne?
+**6.** Co to są zakresy? Czym różnią się od jawnie zapisanych wektorów i dlaczego są wygodne?
 
-7. Co to jest transpozycja macierzy? Jak oznacza się ją w Octave?
+**7.** Co to jest transpozycja macierzy? Jak oznacza się ją w Octave?
 
-8. W jaki sposób można łatwo zamienić wektor kolumnowy w wierszowy i odwrotnie?
+**8.** W jaki sposób można łatwo zamienić wektor kolumnowy w wierszowy i odwrotnie?
 
-9. W jaki sposób zapisuje się zmienne Octave w zewnętrznych plikach?
+**9.** W jaki sposób zapisuje się zmienne Octave w zewnętrznych plikach?
 
-10. W jaki sposób wczytuje się zmienne Octave z plików?
+**10.** W jaki sposób wczytuje się zmienne Octave z plików?
 
-11. Jak zwolnić pamięć zajmowaną przez niepotrzebną zmienną?
+**11.** Jak zwolnić pamięć zajmowaną przez niepotrzebną zmienną?
 
-12. Jak sprawdzić, jakie zmienne są aktualnie zdefiniowane, jaki mają rozmiar i ile pamięci zajmują?
+**12.** Jak sprawdzić, jakie zmienne są aktualnie zdefiniowane, jaki mają rozmiar i ile pamięci zajmują?
 
 ## Zadania
 
-1. Utwórz wektor `v` o elementach `1, 2, 5, 10` i zapisz go w binarnym pliku Octave:
+**Zadanie 1.** Utwórz wektor `v` o elementach `1, 2, 5, 10` i zapisz go w binarnym pliku Octave:
 
-   ```octave
-   v = [1 2 5 10];
-   save -binary "v.oct" v
-   ```
+```octave
+v = [1 2 5 10];
+save -binary "v.oct" v
+```
 
-2. Zamknij Octave, uruchom go ponownie i wczytaj zapisany plik:
+**Zadanie 2.** Zamknij Octave, uruchom go ponownie i wczytaj zapisany plik:
 
-   ```octave
-   load "v.oct"
-   ```
+```octave
+load "v.oct"
+```
 
-   Sprawdź poleceniem `who`, że zmienna `v` została odtworzona.
+Sprawdź poleceniem `who`, że zmienna `v` została odtworzona.
 
-3. Dla wektora `v` sprawdź działanie:
+**Zadanie 3.** Dla wektora `v` sprawdź działanie:
 
-   ```octave
-   v + v
-   v + 1
-   v * 2
-   v'
-   ```
+```octave
+v + v
+v + 1
+v * 2
+v'
+```
 
-4. Utwórz wektor `a = 10:10:100`, a następnie za pomocą indeksowania zakresami wyświetl elementy od trzeciego do siódmego.
+**Zadanie 4.** Utwórz wektor `a = 10:10:100`, a następnie za pomocą indeksowania zakresami wyświetl elementy od trzeciego do siódmego.
 
-5. Pobierz przykładowy plik danych [equation.mat](../site_assets/equation.mat), a następnie:
-   1. wczytaj go do Octave,
-   2. sprawdź nowe zmienne poleceniem `who`,
-   3. zbadaj rozmiar zmiennej `X` za pomocą `size`, `columns` i `whos`,
-   4. wyznacz najmniejszą, największą, średnią i medianę elementów `X` za pomocą `min`, `max`, `mean` i `median`,
-   5. narysuj `X` poleceniem `plot(X)`,
-   6. zapisz `X` do pliku tekstowego poleceniem `save -text` i sprawdź jego zawartość.
+**Zadanie 5.** Pobierz przykładowy plik danych [equation.mat](../site_assets/equation.mat), a następnie:
+
+1. wczytaj go do Octave,
+2. sprawdź nowe zmienne poleceniem `who`,
+3. zbadaj rozmiar zmiennej `X` za pomocą `size`, `columns` i `whos`,
+4. wyznacz najmniejszą, największą, średnią i medianę elementów `X` za pomocą `min`, `max`, `mean` i `median`,
+5. narysuj `X` poleceniem `plot(X)`,
+6. zapisz `X` do pliku tekstowego poleceniem `save -text` i sprawdź jego zawartość.
