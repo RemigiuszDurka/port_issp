@@ -164,37 +164,25 @@ quit
 
 ## Zadania do wykonania w Octave
 
-1. Oblicz $\sin 20^\circ$.
+**Zadanie 1.** Oblicz $\sin 20^\circ$.
 
-2. Porównaj liczby $10^{11}$ i $11^{10}$.
+**Zadanie 2.** Porównaj liczby $10^{11}$ i $11^{10}$.
 
-3. Sprawdź, że `sqrt(-1)` daje jednostkę urojoną oraz że $i^2=-1$.
+**Zadanie 3.** Sprawdź, że `sqrt(-1)` daje jednostkę urojoną oraz że $i^2=-1$.
 
-4. Sprawdź, że Octave potrafi obliczać logarytmy z liczb ujemnych.
-   - Ile wynosi numerycznie `log(-1)`?
-   - Na podstawie wyniku zaproponuj dokładny wzór na $\log(-1)$.
+**Zadanie 4.** Sprawdź, że Octave potrafi obliczać logarytmy z liczb ujemnych.
+- Ile wynosi numerycznie `log(-1)`?
+- Na podstawie wyniku zaproponuj dokładny wzór na $\log(-1)$.
 
-5. Oblicz $\pi^\pi$ i wyświetl co najmniej 10 cyfr po przecinku.
+**Zadanie 5.** Oblicz $\pi^\pi$ i wyświetl co najmniej 10 cyfr po przecinku.
 
-6. Porównaj liczbowo
+**Zadanie 6.** Porównaj liczbowo $\left(1+\frac{1}{100000}\right)^{100000}$ z liczbą $e$. Jak sprawdzić, że liczby te nie są dokładnie równe?
 
-   $$
-   \left(1+\frac{1}{100000}\right)^{100000}
-   $$
+**Zadanie 7.** Ile dokładnie jest różnych wyników losowania Lotto „6 z 49”? Wskazówka: użyj `nchoosek(49,6)`.
 
-   z liczbą $e$. Jak sprawdzić, że liczby te nie są dokładnie równe?
+**Zadanie 8.** Korzystając z liczb zespolonych, sprawdź:
+- ile wynosi `cos(i)`,
+- czy $\sin^2(i)+\cos^2(i)=1$,
+- czy $\cos(i)=(e+e^{-1})/2$.
 
-7. Ile dokładnie jest różnych wyników losowania Lotto „6 z 49”? Wskazówka: użyj `nchoosek(49,6)`.
-
-8. Korzystając z liczb zespolonych, sprawdź:
-   - ile wynosi `cos(i)`,
-   - czy $\sin^2(i)+\cos^2(i)=1$,
-   - czy $\cos(i)=(e+e^{-1})/2$.
-
-9. Na podstawie wzoru
-
-   $$
-   \cos x=\frac{e^{ix}+e^{-ix}}{2}
-   $$
-
-   oraz jedynki trygonometrycznej zaproponuj analogiczny wzór na $\sin x$ zawierający $e$ i $i$. Do ustalenia znaku wykorzystaj Octave.
+**Zadanie 9.** Na podstawie wzoru $\cos x=\frac{e^{ix}+e^{-ix}}{2}$ oraz jedynki trygonometrycznej zaproponuj analogiczny wzór na $\sin x$ zawierający $e$ i $i$. Do ustalenia znaku wykorzystaj Octave.

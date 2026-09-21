@@ -53,5 +53,6 @@ Jeżeli nie chcesz instalować programu lokalnie, możesz skorzystać z wersji d
 
 ## Zadania
 
-1. Uruchom GNU Octave lokalnie.
-2. Dodaj do zakładek przeglądarki stronę kursu oraz dokumentację Octave.
+**Zadanie 1.** Uruchom GNU Octave lokalnie.
+
+**Zadanie 2.** Dodaj do zakładek przeglądarki stronę kursu oraz dokumentację Octave.
