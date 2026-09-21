@@ -1087,13 +1087,13 @@ y(x)=x^3+x-1.
 </ul>
 <p>Dla każdej pary podaj dziedzinę i zbiór wartości funkcji wyjściowej oraz dziedzinę i zbiór wartości funkcji odwrotnej.</p>
 <p>Przypomnienie: <a href="https://en.wikipedia.org/wiki/Logarithm#Change_of_base">wzór na zamianę podstawy logarytmów</a>.</p>
+<p><strong>Zadanie 6.</strong> Sprawdź działanie komend <strong><code>f(g(2))</code></strong>, <strong><code>g(f(2))</code></strong> oraz <strong><code>f(f(2))</code></strong>.</p>
 <h3 id="funkcje-anonimowe-w-octave">Funkcje anonimowe w Octave<a class="headerlink" href="#funkcje-anonimowe-w-octave" title="Permanent link">&para;</a></h3>
 <p>W Octave istnieje możliwość definiowania funkcji anonimowych — w pojedynczym wierszu, bez użycia słów kluczowych <code>function</code> i <code>endfunction</code> (zobacz: <a href="http://dydmat.mimuw.edu.pl/matematyka-obliczeniowa/octave-podstawy">http://dydmat.mimuw.edu.pl/matematyka-obliczeniowa/octave-podstawy</a>). Służy do tego operator <code>@</code>.</p>
 <p>Na przykład, aby zdefiniować funkcje <span class="arithmatex">\(f(x)=2x+1\)</span> oraz <span class="arithmatex">\(g(x)=x^2-1\)</span>, można użyć dwóch instrukcji:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">f</span> <span class="p">=</span> <span class="p">@(</span><span class="n">x</span><span class="p">)</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">g</span> <span class="p">=</span> <span class="p">@(</span><span class="n">x</span><span class="p">)</span> <span class="n">x</span> <span class="o">.*</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
 </code></pre></div>
-<p><strong>Zadanie 6.</strong>  Sprawdź działanie komend <code>f(g(2))</code>, <code>g(f(2))</code> oraz <code>f(f(2))</code>.</p>
 <p><strong>Zadanie 7.</strong> Wyświetl na jednym rysunku wykresy funkcji <span class="arithmatex">\(f\circ f\)</span>, <span class="arithmatex">\(f\circ g\)</span>, <span class="arithmatex">\(g\circ f\)</span> i <span class="arithmatex">\(g\circ g\)</span> dla <span class="arithmatex">\(-2\le x\le 2\)</span>. Do wykresu trzeba zdefiniować argumenty i użyć polecenia typu:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">)));</span>
 </code></pre></div>

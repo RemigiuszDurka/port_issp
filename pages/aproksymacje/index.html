@@ -967,13 +967,7 @@
 
 <h1 id="aproksymacje">Aproksymacje<a class="headerlink" href="#aproksymacje" title="Permanent link">&para;</a></h1>
 <p>Aproksymacje to przybliżenia funkcji za pomocą wielomianów lub innych funkcji prostszych niż aproksymowana funkcja.</p>
-<p>GNU Octave i Gnuplot oferują narzędzia do aproksymacji danych. W Octave funkcja <code>polyfit(x, y, n)</code> wyznacza współczynniki wielomianu stopnia <code>n</code>, który w sensie najmniejszych kwadratów dopasowuje się do danych <code>(x, y)</code>.</p>
-<p>Gnuplotowe <code>fit</code> działa nieco inaczej: najpierw definiujemy model zawierający nieznane parametry, a następnie <code>fit</code> dobiera wartości tych parametrów tak, aby model możliwie dobrze opisywał dane. Model nie musi być wielomianem. Przykładowo dla dopasowania funkcji kwadratowej do dwóch kolumn danych zapisanych w pliku <code>measured.dat</code> można użyć:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="o">*</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">c</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">fit</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="s">'measured.dat'</span><span class="w"> </span><span class="nb">using</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span><span class="mi">2</span><span class="w"> </span><span class="nb">via</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="n">b</span><span class="o">,</span><span class="n">c</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">plot</span><span class="w"> </span><span class="s">'measured.dat'</span><span class="w"> </span><span class="nb">using</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span><span class="mi">2</span><span class="o">,</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</code></pre></div>
-<p>Szczegóły opisuje dokumentacja polecenia <a href="https://gnuplot.info/docs/loc7134.html"><code>fit</code> w Gnuplot</a>.</p>
+<p>GNU Octave oferuje narzędzia do aproksymacji danych. W tym rozdziale będziemy używać przede wszystkim funkcji <code>polyfit(x, y, n)</code>, która wyznacza współczynniki wielomianu stopnia <code>n</code> dopasowanego do danych <code>(x,y)</code> metodą najmniejszych kwadratów. Otrzymany wielomian można następnie obliczać poleceniem <code>polyval</code> i porównywać z danymi na wykresie.</p>
 <p>Warto przypomnieć szereg Taylora, który pozwala aproksymować funkcję w pobliżu pewnego punktu za pomocą wielomianu. W szczególności, dla funkcji <span class="arithmatex">\(f(x)\)</span> rozwiniętej w szereg Taylora wokół punktu <span class="arithmatex">\(x_0\)</span> mamy</p>
 <div class="arithmatex">\[
 f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+\ldots = \sum_{n=0}^{\infty}\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n.
@@ -1036,103 +1030,81 @@ f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+\ldots = \sum_{n=0}^{\in
 <li>Czy ta funkcja odwrotna jest w swej dziedzinie ciągła?</li>
 </ul>
 <h2 id="zadania-do-wykonania-recznie">Zadania do wykonania ręcznie<a class="headerlink" href="#zadania-do-wykonania-recznie" title="Permanent link">&para;</a></h2>
-<ol>
-<li>O pewnym wielomianie <span class="arithmatex">\(W\)</span> wiadomo, że <span class="arithmatex">\(W(0)=4\)</span> i <span class="arithmatex">\(W(2)=-3\)</span>. Czy ten wielomian musi mieć pierwiastek?</li>
-<li>Skoro</li>
-</ol>
-<p>$$
-   \sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
-   $$</p>
-<p>to ile wynosi</p>
-<p>$$
-   \lim_{x\to 0}\frac{\sin x}{x}\,?
-   $$</p>
-<ol>
-<li>Skoro</li>
-</ol>
-<p>$$
-   \cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots,
-   $$</p>
-<p>to ile wynosi</p>
-<p>$$
-   \lim_{x\to 0}\frac{1-\cos x}{x^2}\,?
-   $$</p>
-<ol>
-<li>Skoro</li>
-</ol>
-<p>$$
-   \ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\ldots,
-   $$</p>
-<p>to ile wynosi</p>
-<p>$$
-   \lim_{x\to 0}\frac{\ln(1+x)}{x}\,?
-   $$</p>
-<ol>
-<li>Przypomnij, ile wynosi rozwinięcie funkcji <span class="arithmatex">\(e^x\)</span>. Zapisz rozwinięcie aż do piątej potęgi.</li>
-<li>Podaj analogiczne rozwinięcie <span class="arithmatex">\(e^{-x}\)</span>.</li>
-<li>Podaj analogiczne rozwinięcie <span class="arithmatex">\(e^{ix}\)</span>.</li>
-<li>Wyraź <span class="arithmatex">\(e^{ix}\)</span> jako kombinację <span class="arithmatex">\(\sin x\)</span> oraz <span class="arithmatex">\(\cos x\)</span>.</li>
-<li>Podaj rozwinięcie cosinusa hiperbolicznego, wiedząc, że</li>
-</ol>
-<p>$$
-   \cosh x=\frac{e^x+e^{-x}}{2}.
-   $$</p>
-<ol>
-<li>
-<p>Biorąc zadania powyżej, udowodnij poprawność słynnego wzoru Eulera:</p>
+<p><strong>Zadanie 1.</strong> O pewnym wielomianie <span class="arithmatex">\(W\)</span> wiadomo, że <span class="arithmatex">\(W(0)=4\)</span> i <span class="arithmatex">\(W(2)=-3\)</span>. Czy ten wielomian musi mieć pierwiastek?</p>
+<p><strong>Zadanie 2.</strong> Skoro</p>
 <div class="arithmatex">\[
-e^{i\pi}+1=0.
+\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
 \]</div>
-</li>
-</ol>
-<h2 id="zadania-do-wykonania-w-asyscie-komputera">Zadania do wykonania w asyście komputera<a class="headerlink" href="#zadania-do-wykonania-w-asyscie-komputera" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Octave:</strong> Jak już wiesz,</li>
-</ol>
+<p>to ile wynosi</p>
+<div class="arithmatex">\[
+\lim_{x\to 0}\frac{\sin x}{x}\,?
+\]</div>
+<p><strong>Zadanie 3.</strong> Skoro</p>
+<div class="arithmatex">\[
+\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots,
+\]</div>
+<p>to ile wynosi</p>
+<div class="arithmatex">\[
+\lim_{x\to 0}\frac{1-\cos x}{x^2}\,?
+\]</div>
+<p><strong>Zadanie 4.</strong> Skoro</p>
+<div class="arithmatex">\[
+\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\ldots,
+\]</div>
+<p>to ile wynosi</p>
+<div class="arithmatex">\[
+\lim_{x\to 0}\frac{\ln(1+x)}{x}\,?
+\]</div>
+<p><strong>Zadanie 5.</strong> Przypomnij, ile wynosi rozwinięcie funkcji <span class="arithmatex">\(e^x\)</span>. Zapisz rozwinięcie aż do piątej potęgi.</p>
+<p><strong>Zadanie 6.</strong> Podaj analogiczne rozwinięcie <span class="arithmatex">\(e^{-x}\)</span>.</p>
+<p><strong>Zadanie 7.</strong> Podaj analogiczne rozwinięcie <span class="arithmatex">\(e^{ix}\)</span>.</p>
+<p><strong>Zadanie 8.</strong> Wyraź <span class="arithmatex">\(e^{ix}\)</span> jako kombinację <span class="arithmatex">\(\sin x\)</span> oraz <span class="arithmatex">\(\cos x\)</span>.</p>
+<p><strong>Zadanie 9.</strong> Podaj rozwinięcie cosinusa hiperbolicznego, wiedząc, że</p>
+<div class="arithmatex">\[
+\cosh x=\frac{e^x+e^{-x}}{2}.
+\]</div>
+<p><strong>Zadanie 10.</strong> Biorąc zadania powyżej, udowodnij poprawność słynnego wzoru Eulera:</p>
 <p>$$
-   \sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
-   \qquad
-   \cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots.
-   $$</p>
+ e^{i\pi}+1=0.
+ $$</p>
+<h2 id="zadania-do-wykonania-w-asyscie-komputera">Zadania do wykonania w asyście komputera<a class="headerlink" href="#zadania-do-wykonania-w-asyscie-komputera" title="Permanent link">&para;</a></h2>
+<p><strong>Zadanie 1.</strong> <strong>Octave:</strong> Jak już wiesz,</p>
+<div class="arithmatex">\[
+\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\ldots,
+\qquad
+\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\ldots.
+\]</div>
 <p>Niech <span class="arithmatex">\(s(x)\)</span> będzie wielomianem, który powstaje z powyższego szeregu dla <span class="arithmatex">\(\sin x\)</span> po odrzuceniu wyrazów w potędze wyższej niż 5. Podobnie niech <span class="arithmatex">\(c(x)\)</span> będzie wielomianem, który powstaje z szeregu dla <span class="arithmatex">\(\cos x\)</span> po odrzuceniu wyrazów wyższego stopnia niż 5.</p>
 <ul>
-<li>
-<p>Utwórz iloczyn</p>
-<p>$$
- w(x)=s(x)\cdot s(x)+c(x)\cdot c(x),
- $$</p>
-<p>który powinien w przybliżeniu równać się <span class="arithmatex">\(\sin^2 x+\cos^2 x\)</span>, czyli mieć wartość 1. Jeżeli używasz Octave i polecenia <code>conv</code>, wielomiany <strong>nie muszą mieć tego samego stopnia</strong> — <code>conv</code> potrafi mnożyć wektory współczynników o różnej długości. Subtelność pojawia się dopiero wtedy, gdy chcemy później <strong>dodać</strong> otrzymane wielomiany, np. <code>conv(s,s)</code> i <code>conv(c,c)</code>: ich wektory współczynników muszą odnosić się do tych samych potęg i mieć zgodną długość. Krótszy wektor trzeba więc odpowiednio dopełnić zerami od strony najwyższych potęg.
-   - Sprawdź, że wyraz wolny <span class="arithmatex">\(w(x)\)</span> faktycznie równa się 1, a wszystkie pozostałe jego wyrazy stopnia <span class="arithmatex">\(\leq 5\)</span> równe są 0.
-   - Sprawdź, jakie wartości ma <span class="arithmatex">\(w(x)-1\)</span> dla <code>x = linspace(0, pi, 100)</code>.</p>
-</li>
-<li>
-<p><strong>Ważne zadanie:</strong> Niech w Octave</p>
-</li>
+<li>Utwórz iloczyn</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">x</span> <span class="p">=</span> <span class="mi">0</span><span class="p">:</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">3</span><span class="p">;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">y</span> <span class="p">=</span> <span class="nb">exp</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<p>$$
+  w(x)=s(x)\cdot s(x)+c(x)\cdot c(x),
+  $$</p>
+<p>który powinien w przybliżeniu równać się <span class="arithmatex">\(\sin^2 x+\cos^2 x\)</span>, czyli mieć wartość 1. Jeżeli używasz Octave i polecenia <code>conv</code>, wielomiany <strong>nie muszą mieć tego samego stopnia</strong> — <code>conv</code> potrafi mnożyć wektory współczynników o różnej długości. Subtelność pojawia się dopiero wtedy, gdy chcemy później <strong>dodać</strong> otrzymane wielomiany, np. <code>conv(s,s)</code> i <code>conv(c,c)</code>: ich wektory współczynników muszą odnosić się do tych samych potęg i mieć zgodną długość. Krótszy wektor trzeba więc odpowiednio dopełnić zerami od strony najwyższych potęg.
+- Sprawdź, że wyraz wolny <span class="arithmatex">\(w(x)\)</span> faktycznie równa się 1, a wszystkie pozostałe jego wyrazy stopnia <span class="arithmatex">\(\leq 5\)</span> równe są 0.
+- Sprawdź, jakie wartości ma <span class="arithmatex">\(w(x)-1\)</span> dla <code>x = linspace(0, pi, 100)</code>.</p>
+<p><strong>Zadanie 2.</strong> <strong>Ważne zadanie:</strong> Niech w Octave</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">x</span> <span class="p">=</span> <span class="mi">0</span><span class="p">:</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">3</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">y</span> <span class="p">=</span> <span class="nb">exp</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
 </code></pre></div>
 <ul>
-<li>
-<p>Za pomocą polecenia <code>polyfit</code> dopasuj do <code>(x, y)</code> wielomiany stopnia od 1 do 5. Czy współczynniki tych wielomianów w wyrazach o potędze <span class="arithmatex">\(\leq 3\)</span> dążą do współczynników wielomianu uzyskanego z rozwinięcia <span class="arithmatex">\(\exp x\)</span> względem <span class="arithmatex">\(x\)</span> wokół 0, tj.</p>
-<p>$$
- \exp x=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\ldots\,?
- $$</p>
-<p>Wskazówka — szybka komenda do wyświetlenia jednego z tych wielomianów:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">polyout</span><span class="p">(</span><span class="nb">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
-</code></pre></div>
-</li>
-<li>
-<p>Wyświetl <span class="arithmatex">\(y(x)\)</span> oraz kolejne wielomiany aproksymacyjne otrzymane w poprzednim punkcie. Czy wykresy wielomianów wyższych stopni coraz lepiej odpowiadają aproksymowanej funkcji na zadanym przedziale?</p>
-<p>Wskazówka:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">polyval</span><span class="p">(</span><span class="nb">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">x</span><span class="p">),</span> <span class="s">"+"</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
-</code></pre></div>
-</li>
-<li>
-<p><strong>Bardzo ważne zadanie:</strong> Dany jest ciąg</p>
-</li>
+<li>Za pomocą polecenia <code>polyfit</code> dopasuj do <code>(x, y)</code> wielomiany stopnia od 1 do 5. Czy współczynniki tych wielomianów w wyrazach o potędze <span class="arithmatex">\(\leq 3\)</span> dążą do współczynników wielomianu uzyskanego z rozwinięcia <span class="arithmatex">\(\exp x\)</span> względem <span class="arithmatex">\(x\)</span> wokół 0, tj.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[9, 4, 11, 36, 85, 164, 279, 436, 641, 900]
+<p>$$
+  \exp x=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\ldots\,?
+  $$</p>
+<p>Wskazówka — szybka komenda do wyświetlenia jednego z tych wielomianów:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">polyout</span><span class="p">(</span><span class="nb">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
+</code></pre></div>
+<ul>
+<li>Wyświetl <span class="arithmatex">\(y(x)\)</span> oraz kolejne wielomiany aproksymacyjne otrzymane w poprzednim punkcie. Czy wykresy wielomianów wyższych stopni coraz lepiej odpowiadają aproksymowanej funkcji na zadanym przedziale?</li>
+</ul>
+<p>Wskazówka:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">polyval</span><span class="p">(</span><span class="nb">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">x</span><span class="p">),</span> <span class="s">"+"</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+</code></pre></div>
+<p><strong>Zadanie 3.</strong> <strong>Bardzo ważne zadanie:</strong> Dany jest ciąg</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[9, 4, 11, 36, 85, 164, 279, 436, 641, 900]
 </code></pre></div>
 <p>Wyrazy tego ciągu zostały wygenerowane za pomocą pewnego wielomianu niewielkiego stopnia, tj. <span class="arithmatex">\(a_n=f(n)\)</span> dla <span class="arithmatex">\(n=1,2,\ldots,10\)</span>, przy czym <span class="arithmatex">\(f(n)\)</span> jest wielomianem zmiennej <span class="arithmatex">\(n\)</span>. Pytanie brzmi: jaki to wielomian?</p>
 <ul>
