@@ -13,8 +13,6 @@ Druga część materiału o pochodnych.
 - [Karta wzorów](../site_assets/karta_wzorow_v2.png)
 - [Starsza prezentacja](../site_assets/pochodne2_old.pdf)
 
-<!-- [Pochodne — notatki SVG](../site_assets/Pochodne-2.svg) komentarz: nie działa w przeglądarce, bo SVG nie jest osadzone w HTML -->
-
 ## Zadania do wykonania ręcznie
 
 **Zadanie 1.** Powiąż wykresy prędkości z wykresami przyspieszeń:
@@ -33,15 +31,11 @@ Druga część materiału o pochodnych.
 
 ![Schemat wykresu prędkości od czasu.](https://static.epodreczniki.pl/portal/f/res-minimized/R1HClJPiOQXji/5/1E0cAVPyYK5Mxlvm4FGkIuoiloQ4K7Rv.png){ width="600" }
 
-**Zadanie 5.** Narysuj wykres prędkości od czasu, wiedząc, że:
-
-![Wykres drogi od czasu dla trzech ciał A, B i C.](https://static.epodreczniki.pl/portal/f/res-minimized/RdzOsfrL3VKjX/3/HI6skZpN3mtHuUIYWDCSWFoTiGX7cCDy.png){ width="600" }
-
-**Zadanie 6.** Jeżeli małpka na sprężynie porusza się wzdłuż jednej prostej, np. w kierunku góra–dół, to w punktach maksymalnego wychylenia jej prędkość znika. Jak ta obserwacja ma się do sposobu ustalania ekstremów funkcji za pomocą pochodnych?
+**Zadanie 5.** Jeżeli małpka na sprężynie porusza się wzdłuż jednej prostej, np. w kierunku góra–dół, to w punktach maksymalnego wychylenia jej prędkość znika. Jak ta obserwacja ma się do sposobu ustalania ekstremów funkcji za pomocą pochodnych?
 
 ![Małpka na sprężynie — ilustracja do zadania o ekstremach.](../site_assets/malpka-150x150.jpg){ width="150" }
 
-**Zadanie 7.** Rozpatrzmy funkcję
+**Zadanie 6.** Rozpatrzmy funkcję
 
 $$
 y(x)=\sqrt{1+x}.
@@ -51,24 +45,25 @@ $$
 - Uzasadnij, że dla dostatecznie małych $x$ wartość $\sqrt{1+x}$ można przybliżyć wyrażeniem $1+x/2$. Uwaga: jest to tak często używane przybliżenie, że warto je zapamiętać.
 - Oszacuj w pamięci wartości $\sqrt{1.02}$ oraz $\sqrt{0.96}$.
 
-**Zadanie 8.** Rozwiń funkcję $\sin x$ w szereg Taylora w punkcie $x_0=\pi$.
+**Zadanie 7.** Rozwiń funkcję $\sin x$ w szereg Taylora w punkcie $x_0=\pi$.
 
-**Zadanie 9.** Rozwiń funkcję $\sin x$ w szereg Taylora w punkcie $x_0=3\pi/2$.
+**Zadanie 8.** Rozwiń funkcję $\sin x$ w szereg Taylora w punkcie $x_0=3\pi/2$.
 
-**Zadanie 10.** Policz pochodną $e^{ax}$ z definicji ilorazu różnicowego. Wskazówka: w którymś momencie musisz użyć rozwinięcia $e^{ax}$ w szereg Taylora.
-
-**Zadanie 11.** Policz styczną w punkcie $x_0=1$:
+**Zadanie 9.** Policz styczną w punkcie $x_0=1$:
 
 - funkcji $1/x$,
+
+**Zadanie 10.** Policz styczną w punkcie $x_0=1$:
+
 - funkcji $x\sin(x^2)$.
 
-**Zadanie 12.** Niech $y=k\sin(ax)$. Oblicz:
+**Zadanie 11.** Niech $y=k\sin(ax)$. Oblicz pochodne cząstkowe:
 
-- $\dfrac{dy}{dx}$,
-- $\dfrac{dy}{da}$,
-- $\dfrac{dy}{dk}$.
+- $\dfrac{\partial y}{\partial x}$,
+- $\dfrac{\partial y}{\partial a}$,
+- $\dfrac{\partial y}{\partial k}$.
 
-**Zadanie 13.** Podaj różniczki następujących funkcji jednej zmiennej:
+**Zadanie 12.** Podaj różniczki następujących funkcji jednej zmiennej:
 
 - $y(x)=\sin(2x)$,
 - $y(x)=\ln(3x)$,
@@ -76,12 +71,12 @@ $$
 - $y(t)=gt^2/2+v_0t$,
 - $x(t)=\sin(at)e^{-\omega t}$.
 
-**Zadanie 14.** Podaj różniczki następujących funkcji dwóch zmiennych. Pamiętaj, że w takim przypadku wzór na różniczkę zawiera pochodne cząstkowe:
+**Zadanie 13.** Podaj różniczki następujących funkcji dwóch zmiennych. Pamiętaj, że w takim przypadku wzór na różniczkę zawiera pochodne cząstkowe:
 
 - $\psi(t,x)=\sin(kx)e^{-\omega t}$,
 - $f(x,y)=x/y$.
 
-**Zadanie 15.** Pomiar średnicy pewnego koła dał wartość $L=31.0\pm0.5\,\mathrm{cm}$. Na tej podstawie oszacowano, że obwód tego koła wynosi $O=\pi L\approx97.4\,\mathrm{cm}$, a jego pole
+**Zadanie 14.** Pomiar średnicy pewnego koła dał wartość $L=31.0\pm0.5\,\mathrm{cm}$. Na tej podstawie oszacowano, że obwód tego koła wynosi $O=\pi L\approx97.4\,\mathrm{cm}$, a jego pole
 
 $$
 P=\frac{\pi L^2}{4}\approx754.8\,\mathrm{cm}^2.
@@ -92,12 +87,12 @@ Oszacuj niepewność pomiaru:
 - długości obwodu tego koła, $\Delta O$,
 - pola powierzchni tego koła, $\Delta P$.
 
-**Zadanie 16.** Gdyby średnica koła wzrosła 2 razy, to jego obwód również wzrósłby 2 razy, natomiast pole jego powierzchni powiększyłoby się 4 razy. Przypuśćmy, że niepewność pomiarową długości średnicy koła uda się zredukować o 50%. Jak wpłynie to na zmianę niepewności pomiarowej:
+**Zadanie 15.** Gdyby średnica koła wzrosła 2 razy, to jego obwód również wzrósłby 2 razy, natomiast pole jego powierzchni powiększyłoby się 4 razy. Przypuśćmy, że niepewność pomiarową długości średnicy koła uda się zredukować o 50%. Jak wpłynie to na zmianę niepewności pomiarowej:
 
 - obwodu koła, $\Delta O$?
 - pola powierzchni koła, $\Delta P$?
 
-**Zadanie 17.** Korzystając z prawa Ohma, $R=U/I$, wyznacz opór elektryczny $R$ i oszacuj błąd pomiaru tej wielkości, jeżeli $U=10.00\,\mathrm{V}$, $\Delta U=0.10\,\mathrm{V}$, $I=5.00\,\mathrm{A}$, a $\Delta I=0.05\,\mathrm{A}$.
+**Zadanie 16.** Korzystając z prawa Ohma, $R=U/I$, wyznacz opór elektryczny $R$ i oszacuj błąd pomiaru tej wielkości, jeżeli $U=10.00\,\mathrm{V}$, $\Delta U=0.10\,\mathrm{V}$, $I=5.00\,\mathrm{A}$, a $\Delta I=0.05\,\mathrm{A}$.
 
 ## Zadania do wykonania przy asyście komputera
 

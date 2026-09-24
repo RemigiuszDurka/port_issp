@@ -5,11 +5,23 @@ legacy_url: "http://users.ift.uni.wroc.pl/~rdurka/matissp/index.php/ciagi_i_szer
 
 # Ciągi i szeregi
 
-**Ciąg** to funkcja określona na zbiorze liczb naturalnych, np. $a:\mathbb N\to\mathbb R$, której wartości zapisujemy jako $a_1,a_2,a_3,\ldots$ lub $\{a_n\}_{n=1}^{\infty}$. **Szereg** powstaje przez sumowanie kolejnych wyrazów ciągu. Suma pierwszych $m$ wyrazów ma postać $S_m=\displaystyle\sum_{n=1}^{m}a_n$, natomiast przez szereg nieskończony rozumiemy granicę takich sum częściowych, zapisywaną symbolicznie jako $\displaystyle\sum_{n=1}^{\infty}a_n$, o ile ta granica istnieje.
+**Ciąg** $(a_n)$ to funkcja, która każdej liczbie naturalnej $n$ przyporządkowuje liczbę $a_n$. Możemy go zapisać jako $a_1,a_2,a_3,\ldots$ albo $\{a_n\}_{n=1}^{\infty}$. Liczby $a_n$ nazywamy wyrazami ciągu. **Szereg** jest wyrażeniem powstałym przez dodawanie wyrazów ciągu:
+
+$$
+a_1+a_2+a_3+\ldots.
+$$
+
+Jego $m$-tą sumą częściową nazywamy sumę pierwszych $m$ wyrazów:
+
+$$
+S_m=\sum_{n=1}^{m}a_n.
+$$
+
+Jeżeli ciąg sum częściowych $(S_m)$ ma skończoną granicę, to szereg $\sum_{n=1}^{\infty}a_n$ nazywamy zbieżnym, a tę granicę — jego sumą. W przeciwnym razie szereg jest rozbieżny.
 
 ## Wykład
 
-- Materiały: <a href="../../site_assets/ciagi.pdf">Ciągi.pdf</a>
+- Materiały: <a href="../site_assets/ciagi.pdf">Ciągi.pdf</a>
 <!-- - [Ciągi i szeregi — HTML](../site_assets/ciagi.html) -->
 - [Starsza prezentacja](../site_assets/ciagi_old.pdf)
 

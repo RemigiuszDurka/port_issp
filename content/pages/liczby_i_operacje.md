@@ -20,7 +20,7 @@ $$
 -7,\qquad 0,\qquad \frac34,\qquad \sqrt2,\qquad \pi,\qquad 1+i
 $$
 
-podaj najmniejszy spośród zbiorów $\mathbb N$, $\mathbb Z$, $\mathbb Q$, $\mathbb R$, $\mathbb C$, do którego dana liczba należy.
+podaj najmniejszy spośród zbiorów $\mathbb N$, $\mathbb Z$, $\mathbb Q$, $\mathbb R$, $\mathbb C$, do którego dana liczba należy. W tym kursie przyjmujemy konwencję $\mathbb N=\{1,2,3,\ldots\}$, czyli $0\notin\mathbb N$.
 
 **Zadanie 2.** Uporządkuj standardowe zbiory liczbowe przez inkluzję (co w czym się znajduje): $\mathbb N$, $\mathbb Z$, $\mathbb Q$, $\mathbb R$, $\mathbb C$.
 
@@ -41,6 +41,8 @@ $$
 Wyznacz zbiory $A\cap B$, $A\cup B$, $A\setminus B$ oraz $B\setminus A$ i zaznacz je na osi liczbowej.
 
 ### Liczby zespolone
+
+Liczbą zespoloną nazywamy liczbę postaci $z=a+ib$, gdzie $a,b\in\mathbb R$, a $i$ jest jednostką urojoną spełniającą $i^2=-1$. Liczbę $a$ nazywamy częścią rzeczywistą, a $b$ — częścią urojoną liczby $z$.
 
 **Zadanie 5.** Znając już liczby zespolone, znajdź ręcznie miejsca zerowe funkcji kwadratowej $y(x)=x^2+x+1$.
 
@@ -75,7 +77,7 @@ Wskazówka: przyda Ci się wzór na zmianę podstawy logarytmu.
 
 ![Wykres fazowy wody.](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Phase_diagram_of_water.svg/500px-Phase_diagram_of_water.svg.png){ width="300" }
 
-Odpowiedz: dlaczego do sporządzenia zamieszczonych obrazków użyto wykresu półlogarytmicznego typu lin-log?
+Odpowiedz: dlaczego do sporządzenia zamieszczonych obrazków użyto wykresu półlogarytmicznego typu lin-log? Wskaż, która oś ma skalę logarytmiczną** oraz **która przedstawiona wielkość zmienia się w szerokim zakresie wartości (obejmuje wiele rzędów wielkości).
 
 ## Zadania dodatkowe
 
@@ -83,7 +85,7 @@ Odpowiedz: dlaczego do sporządzenia zamieszczonych obrazków użyto wykresu pó
 
    > „Dawno temu, w erze paleozoicznej, kropla popołudniowej ulewy upadła na błotnistą równinę, pozostawiając trwały ślad. Ślad ten w postaci skamieliny odkopał pewnego upalnego dnia w wiele lat później student geologii. Wysączywszy do dna wodę ze swojej manierki student ten bezskutecznie się zastanawiał, ile cząsteczek wody z tej starożytnej kropli mogło znajdować się w manierce, którą przed chwilą opróżnił. Spróbuj Ty ocenić tę liczbę.”
 
-   Zrób odpowiednie założenia potrzebne do rozwiązania zadania. Masa molowa wody wynosi $18.01528\,\mathrm{g/mol}$, a manierka niech ma pojemność 1 litra. Inne potrzebne dane znajdź w Wolfram Alpha lub wykorzystaj z pamięci, np. związek między liczbą moli, masą molową, liczbą Avogadra i liczbą cząstek. To zadanie nie jest żartem i da się je rozwiązać.
+   Zrób odpowiednie założenia potrzebne do rozwiązania zadania. Masa molowa wody wynosi $18,01528\,\mathrm{g/mol}$, a manierka niech ma pojemność 1 litra. Inne potrzebne dane znajdź w Wolfram Alpha lub wykorzystaj z pamięci, np. związek między liczbą moli, masą molową, liczbą Avogadra i liczbą cząstek. To zadanie nie jest żartem i da się je rozwiązać.
 
 **Zadanie B.** Liczba cząsteczek gazu doskonałego w $1\,\mathrm{m}^3$ powietrza wynosi $2{,}69\times 10^{25}$ (zapis kalkulatorowy: `2.69e25`). Załóżmy, że każdą z tych cząsteczek nagle powiększyliśmy do rozmiarów ziarnka ryżu (*grain of rice*) i rozsypaliśmy równomiernie po powierzchni Ziemi, łącznie z oceanami. Oszacuj, jak grubą warstwą ryżu pokrylibyśmy naszą planetę.
 

@@ -47,12 +47,12 @@ Octave można uruchamiać zarówno z **wiersza poleceń**, jak i w trybie **GUI*
 
 ## Praca bez instalacji
 
-Jeżeli nie chcesz instalować programu lokalnie, możesz skorzystać z wersji działającej w przeglądarce:
+W pracowni komputerowej będziemy pracować przede wszystkim na **lokalnie zainstalowanym GNU Octave**. Jeżeli pojawi się problem z instalacją lub dostępem do programu, można awaryjnie skorzystać z wersji działającej w przeglądarce:
 
 [Octave Online](https://octave-online.net/){ .md-button .md-button--primary }
 
 ## Zadania
 
-**Zadanie 1.** Uruchom GNU Octave lokalnie.
+**Zadanie 1.** Uruchom GNU Octave lokalnie. Jeżeli lokalne uruchomienie nie jest możliwe, skorzystaj z Octave Online.
 
 **Zadanie 2.** Dodaj do zakładek przeglądarki stronę kursu oraz dokumentację Octave.

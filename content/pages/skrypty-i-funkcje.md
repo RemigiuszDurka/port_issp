@@ -75,27 +75,38 @@ Octave może wyświetlić opis zapisany w komentarzach.
 2. Jakie rozszerzenie mają typowe pliki skryptowe Octave?
 3. Jak uruchamia się skrypt znajdujący się w katalogu roboczym?
 4. Jak sprawdzić bieżący katalog?
-5. Jakie są najważniejsze zalety zapisywania obliczeń w skryptach?
-6. Jak umieszczać komentarze w kodzie?
+5. Jak umieszczać komentarze w kodzie?
 
 ## Zadania ze skryptów
 
-1. Wpisz początek nazwy polecenia `sombrero`, np. `som`, i użyj `Tab`, aby sprawdzić autouzupełnianie.
-2. Sprawdź dokumentację:
+**Zadanie 1.** Utwórz skrypt `wektor.m`. Zdefiniuj w nim dwuwymiarowy wektor, np.
+
+   ```octave
+   v = [3 4];
+   ```
+
+   Następnie oblicz jego długość ze wzoru $\sqrt{v_1^2+v_2^2}$ i porównaj wynik z wartością zwracaną przez `norm(v)`. Uruchom cały skrypt z konsoli.
+
+**Zadanie 2.** Wpisz początek nazwy polecenia `sombrero`, np. `som`, i użyj `Tab`, aby sprawdzić autouzupełnianie.
+
+**Zadanie 3.** Sprawdź dokumentację:
 
    ```octave
    help sombrero
    ```
 
-3. Wywołaj `sombrero` z różnymi argumentami, np. `30` i `100`.
-4. Sprawdź pełniejszą dokumentację poleceniem `doc sombrero`.
-5. Sprawdź, czy wygenerowany wykres można obracać, przybliżać i oddalać.
-6. Za pomocą `help sombrero` sprawdź, gdzie znajduje się definicja tej funkcji. Następnie utwórz własny plik `kolec.m`, który będzie rysował funkcję
+**Zadanie 4.** Wywołaj `sombrero` z różnymi argumentami, np. `30` i `100`.
 
-   $$
+**Zadanie 5.** Sprawdź pełniejszą dokumentację poleceniem `doc sombrero`.
+
+**Zadanie 6.** Sprawdź, czy wygenerowany wykres można obracać, przybliżać i oddalać.
+
+**Zadanie 7.** Za pomocą `help sombrero` sprawdź, gdzie znajduje się definicja tej funkcji. Następnie utwórz własny plik `kolec.m`, który będzie rysował funkcję
+
+   $
    z(x,y)=2^{-\sqrt{x^2+y^2}},
    \qquad -4\le x,y\le4.
-   $$
+   $
 
    Dodaj własny komentarz i sprawdź, czy pojawia się po wydaniu `help kolec`.
 
@@ -355,8 +366,9 @@ są równoważne.
 
 Nie wolno jednak na tej podstawie zakładać, że kropkę można zawsze pomijać. Gdy oba argumenty są wektorami lub macierzami, różnica pomiędzy operacją macierzową i elementową staje się zasadnicza.
 
+---
 
-## Dokumentacja własnej funkcji
+# Dokumentacja własnej funkcji
 
 Komentarz umieszczony na początku pliku z funkcją może zostać wyświetlony przez `help`:
 
@@ -388,22 +400,16 @@ W jednym pliku mogą znajdować się także funkcje pomocnicze wykorzystywane pr
 
 ## Quiz z funkcji
 
-1. Dlaczego funkcje warto umieszczać w osobnych plikach?
-2. Jak definiuje się argumenty funkcji?
-3. Czy funkcja może zwracać kilka wartości?
-4. Dlaczego instrukcje w funkcji często kończymy średnikiem?
-5. Co oznacza wektoryzacja obliczeń i czym różni się od funkcji typu *mapping*?
-6. Czym różni się skrypt od pliku zawierającego funkcję?
-7. Jaka jest różnica między `A*B` i `A.*B`?
-8. Jaka jest różnica między `A/B` i `A./B`?
-9. Jaka jest różnica między `A\B` i `A.\B`?
-10. Jaka jest różnica między `A^2` i `A.^2`?
-11. Dlaczego w `sinusik` używamy `x.^3`, a nie `x^3`?
-12. Co zwróci `2.^(1:10)`?
+1. Jak definiuje się argumenty funkcji?
+2. Czy funkcja może zwracać kilka wartości?
+3. Dlaczego instrukcje w funkcji często kończymy średnikiem?
+4. Czym różni się skrypt od pliku zawierającego funkcję?
+5. Jaka jest różnica między `A*B` i `A.*B`?
+6. Dlaczego w `sinusik` używamy `x.^3`, a nie `x^3`?
 
 ## Zadania z definiowania funkcji
 
-### Zadanie 1
+### **Zadanie 1**
 
 Zdefiniuj funkcję
 
@@ -413,7 +419,7 @@ $$
 
 W Octave przydadzą się funkcje `sqrt` i `abs`. Funkcja powinna działać także dla wektora argumentów.
 
-### Zadanie 2
+### **Zadanie 2**
 
 Narysuj $f(x)$ dla $0\le x\le2.5$. Możesz zacząć od:
 
@@ -427,11 +433,11 @@ Przykładowy wynik:
 
 ![Wykres funkcji używanej w zadaniu.](../site_assets/plot.png){ width="420" }
 
-### Zadanie 3
+### **Zadanie 3**
 
-Z wykresu oszacuj jedno z miejsc zerowych funkcji, a następnie wyznacz je numerycznie za pomocą `fzero` lub `fsolve`.
+Z wykresu oszacuj jedno z miejsc zerowych funkcji, a następnie wyznacz je numerycznie za pomocą `fzero`.
 
-### Zadanie 4
+### **Zadanie 4**
 
 Oblicz pole pomiędzy wykresem $f(x)$ a osią $x$ na odpowiednim przedziale, korzystając z numerycznego całkowania.
 
@@ -439,7 +445,7 @@ Na odzyskanym rysunku obszar całkowania zaznaczono kolorem:
 
 ![Pole pod wykresem funkcji zaznaczone kolorem.](../site_assets/kolor.png){ width="420" }
 
-### Zadanie 5
+### **Zadanie 5**
 
 Sprawdź działanie następujących wyrażeń i wyjaśnij różnice:
 

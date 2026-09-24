@@ -4,17 +4,17 @@ title: "MATLAB"
 
 # MATLAB i Octave
 
-**MATLAB** jest jednym z najważniejszych środowisk obliczeniowych wykorzystywanych w nauce, technice i zastosowaniach inżynierskich. Jest jednak oprogramowaniem komercyjnym i płatnym, choć studentom często oferowany jest bezpłatny lub ograniczony dostęp w ramach licencji uczelnianych i wersji online. Na tym kursie będziemy korzystać przede wszystkim z **GNU Octave** — darmowego i otwartoźródłowego środowiska do obliczeń numerycznych, którego składnia jest w dużej mierze zgodna z MATLAB-em. Dzięki temu większość podstawowych umiejętności zdobytych w Octave można później bez trudu przenieść do MATLAB-a. Na tej stronie porównamy oba środowiska, wskazując **co jest wspólne, gdzie pojawiają się różnice i jak sprawdzać przenośność kodu**.
-
-## MATLAB
-
-**MATLAB** jest komercyjnym środowiskiem obliczeniowym i językiem programowania rozwijanym przez firmę MathWorks. Jest szeroko używany w nauce, technice i analizie danych, szczególnie tam, gdzie korzysta się ze specjalistycznych pakietów (*toolboxów*).
+**MATLAB** jest komercyjnym środowiskiem obliczeniowym i językiem programowania rozwijanym przez firmę MathWorks. Jest szeroko wykorzystywany w nauce, technice i zastosowaniach inżynierskich. Jest jednak oprogramowaniem komercyjnym i płatnym, choć studentom często oferowany jest bezpłatny lub ograniczony dostęp w ramach licencji uczelnianych i wersji online. 
 
 [MATLAB](https://www.mathworks.com/products/matlab.html){ .md-button .md-button--primary }
 
+Na tym kursie będziemy korzystać przede wszystkim z **GNU Octave** — darmowego i otwartoźródłowego środowiska do obliczeń numerycznych, którego składnia jest w dużej mierze zgodna z MATLAB-em. Dzięki temu większość podstawowych umiejętności zdobytych w Octave można później bez trudu przenieść do MATLAB-a.
+
+[GNU Octave](https://www.gnu.org/software/octave/){ .md-button .md-button--primary }
+
 ## Związek z GNU Octave
 
-GNU Octave jest osobnym, wolnym projektem przeznaczonym do obliczeń numerycznych. Jego składnia została zaprojektowana tak, aby duża część podstawowego kodu numerycznego była zgodna z MATLAB-em.
+GNU Octave jest osobnym, wolnym projektem przeznaczonym do obliczeń numerycznych. Jego składnia została zaprojektowana tak, aby duża część podstawowego kodu numerycznego była zgodna z MATLAB-em.  Na tej stronie porównujemy oba środowiska, wskazując co jest wspólne, gdzie pojawiają się różnice i jak sprawdzać przenośność kodu.
 
 W obu środowiskach bardzo podobnie definiujemy liczby, wektory i macierze:
 
@@ -72,6 +72,17 @@ Podobnie działają często używane funkcje takie jak `sin`, `cos`, `exp`, `log
 
 Jeżeli kod ma działać w obu środowiskach, najbezpieczniej używać **wspólnego podzbioru składni**, np. komentarzy `%` oraz zwykłego `end`, i sprawdzać dostępność bardziej specjalistycznych funkcji.
 
+W praktyce **większość podstawowego kodu używanego na tym kursie będzie wyglądała tak samo w Octave i MATLAB-ie**. Różnice pojawiają się przede wszystkim w rozszerzeniach składni i bardziej specjalistycznych funkcjach. Kilka prostych przykładów:
+
+| GNU Octave | MATLAB | Uwagi |
+| --- | --- | --- |
+| `# komentarz` | `% komentarz` | `%` działa w obu środowiskach |
+| `endfor`, `endif`, `endfunction` | `end` | zwykłe `end` działa również w Octave |
+| `2**3` | `2^3` | zapis z `^` działa w obu środowiskach |
+| `a != b` | `a ~= b` | zapis `~=` działa również w Octave |
+
+Dlatego podczas kursu będziemy na ogół używać takiej składni, która jest poprawna w obu programach. Pozwoli to później przenieść większość prostych skryptów z Octave do MATLAB-a bez przepisywania kodu.
+
 ## Macierzowo czy element po elemencie?
 
 Jedna z najważniejszych wspólnych cech MATLAB-a i Octave to rozróżnienie pomiędzy algebrą macierzową a operacjami wykonywanymi element po elemencie.
@@ -96,29 +107,7 @@ Różnice stają się szczególnie istotne, gdy kod korzysta z:
 - obiektów, klas i rozbudowanych aplikacji,
 - szczegółów składni specyficznych dla jednego środowiska.
 
-Dlatego nie należy zakładać, że program działający w jednym środowisku automatycznie zadziała w drugim. W razie wątpliwości sprawdzamy dokumentację konkretnej funkcji.
-
-## Pierwszy test zgodności
-
-Uruchom w Octave i — jeżeli masz dostęp — również w MATLAB-ie:
-
-```matlab
-x = linspace(0, 2*pi, 200);
-f = @(x) exp(-0.1*x) .* sin(3*x);
-y = f(x);
-
-plot(x, y);
-grid on;
-xlabel('x');
-ylabel('f(x)');
-title('Pierwszy wykres');
-```
-
-Następnie zmień parametry `0.1` i `3` i sprawdź, jak wpływają na kształt wykresu. W tym przykładzie oba środowiska powinny zachowywać się praktycznie tak samo.
-
 ## Obliczenia online
-
-Do wykonywania większości przykładów z kursu nie trzeba instalować programu lokalnie.
 
 ### Octave Online
 
@@ -141,15 +130,3 @@ MathWorks udostępnia **MATLAB Online**. Zakres dostępu zależy od posiadanej l
 
 [Uruchom MATLAB Online](https://matlab.mathworks.com/){ .md-button .md-button--primary }
 [Porównaj wersje MATLAB Online](https://www.mathworks.com/products/matlab-online/matlab-online-versions.html){ .md-button }
-
-## Co wybrać?
-
-| Sytuacja | Narzędzie |
-| --- | --- |
-| Realizuję przykłady z tego kursu | **GNU Octave** |
-| Chcę szybko sprawdzić kod w przeglądarce | **Octave Online** |
-| Mam dostęp do licencji MATLAB-a i chcę sprawdzić zgodność | **MATLAB** lub **MATLAB Online** |
-| Potrzebuję konkretnego toolboxa MathWorks | **MATLAB** |
-| Chcę pracować w wolnym, otwartym środowisku | **GNU Octave** |
-
-Najważniejsza umiejętność pozostaje wspólna: poprawne formułowanie obliczeń numerycznych, praca na wektorach i macierzach oraz rozumienie różnicy między operacjami macierzowymi i elementowymi.

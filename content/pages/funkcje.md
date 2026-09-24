@@ -5,7 +5,7 @@ legacy_url: "http://users.ift.uni.wroc.pl/~rdurka/matissp/index.php/funkcje/"
 
 # Funkcje
 
-Funkcją nazywamy przyporządkowanie każdemu elementowi z pewnego zbioru $A$ dokładnie jednego elementu ze zbioru $B$. Zbiór $A$ nazywamy dziedziną funkcji, a zbiór $B$ przeciwdziedziną funkcji. Funkcję oznaczamy symbolem $f:A\to B$, a jej wartość w punkcie $x\in A$ zapisujemy jako $f(x)\in B$.
+Funkcją nazywamy przyporządkowanie każdemu elementowi z pewnego zbioru $A$ dokładnie jednego elementu ze zbioru $B$. Zbiór $A$ nazywamy dziedziną funkcji, a zbiór $B$ przeciwdziedziną funkcji. Funkcję oznaczamy symbolem $f:A\to B$, a jej wartość w punkcie $x\in A$ zapisujemy jako $f(x)\in B$. **Zbiorem wartości** funkcji nazywamy zbiór wszystkich wartości $f(x)$ rzeczywiście przyjmowanych przez funkcję dla $x\in A$; jest on podzbiorem przeciwdziedziny $B$.
 
 ## Wykład
 
@@ -20,11 +20,7 @@ Funkcją nazywamy przyporządkowanie każdemu elementowi z pewnego zbioru $A$ do
 4. Faktoryzacja to przekształcenie wyrażenia do postaci iloczynu czy sumy?
 5. Czy różnica dwóch wielomianów stopnia $n$ (np. 2) może być wielomianem niższego stopnia niż $n$?
 6. Czy iloczyn dwóch wielomianów, każdy stopnia $n$ (np. 2), może być wielomianem niższego stopnia niż $2n$?
-7. Które z poniższych wielomianów na pewno mają co najmniej jeden pierwiastek rzeczywisty:
-
-   - dowolny wielomian 3. stopnia,
-   - dowolny wielomian 6. stopnia,
-   - dowolny wielomian 2015. stopnia?
+7. Które z poniższych wielomianów na pewno mają co najmniej jeden pierwiastek rzeczywisty: dowolny wielomian 3. stopnia, dowolny wielomian 6. stopnia, czy dowolny wielomian 2015. stopnia?
 
 ## Zadania do wykonania ręcznie
 

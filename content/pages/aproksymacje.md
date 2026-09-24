@@ -22,23 +22,29 @@ $$
 
 ## Quiz
 
-1. Znajdź błąd w następującym rozumowaniu:
+**1.** Znajdź błąd w następującym rozumowaniu:
 
    - Jeżeli funkcja ciągła przyjmuje w punktach $a$ i $b$ wartości $f(a)$ i $f(b)$, to przyjmuje też wszystkie wartości pomiędzy $f(a)$ i $f(b)$.
+
    - Funkcja $y(x)=1/x$ jest funkcją elementarną, a więc jest funkcją ciągłą; ponadto $y(-1)=-1$ oraz $y(1)=1$.
+
    - Łącząc powyższe fakty, dochodzimy do wniosku, że musi istnieć liczba $x_0\in[-1,1]$ taka, że $1/x_0=0$.
 
-2. Czy funkcja, której wykres przedstawia poniższy rysunek,
+**2.** Czy funkcja, której wykres przedstawia poniższy rysunek,
 
    ![Przykład funkcji z nieciągłością.](https://upload.wikimedia.org/wikipedia/commons/d/d2/Lower_semi.png){ width="420" }
 
    - ma granicę lewostronną w $x_0$?
+
    - ma granicę prawostronną w $x_0$?
+
    - jest ciągła lewostronnie w $x_0$?
+
    - jest ciągła prawostronnie w $x_0$?
+
    - jest ciągła w $x_0$?
 
-3. Czy funkcja
+**3.** Czy funkcja
 
    $$
    y(x)=\frac{2x-1}{x+2},
@@ -49,17 +55,22 @@ $$
    [![Wykres funkcji homograficznej.](https://upload.wikimedia.org/wikipedia/commons/c/c4/Homografia.svg){ width="500" }](https://upload.wikimedia.org/wikipedia/commons/c/c4/Homografia.svg)
 
    - ma w punkcie $x=-2$ granicę prawostronną, właściwą lub nie?
+
    - ma w punkcie $x=-2$ granicę lewostronną, właściwą lub nie?
+
    - jest w punkcie $x=-2$ lewostronnie lub prawostronnie ciągła?
+
    - jest w punkcie $x=-2$ ciągła?
+
    - jest ciągła na odcinku $[1,2]$?
+
    - jest ciągła na odcinku $[-3,0]$?
 
-4. Na podstawie wykresu funkcji z poprzedniego pytania odpowiedz na następujące pytania:
+**4.** Na podstawie wykresu funkcji z poprzedniego pytania odpowiedz na następujące pytania:
 
    - Czy funkcja ta ma funkcję odwrotną?
+
    - Jeśli tak, to jaka jest jej dziedzina?
-   - Czy ta funkcja odwrotna jest w swej dziedzinie ciągła?
 
 ## Zadania do wykonania ręcznie
 

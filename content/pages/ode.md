@@ -65,8 +65,8 @@ $$
 
 gdzie $v$ jest prędkością samochodu w metrach na sekundę, a $t$ — czasem wyrażonym w sekundach. Aby jednostki w równaniu były zgodne, parametr $b$ ma jednostkę $\mathrm{m/s^2}$, natomiast $c$ — $\mathrm{m^{-1}}$. Parametry te opisują odpowiednio składnik oporu niezależny od prędkości oraz składnik proporcjonalny do $v^2$.
 
-- Znajdź funkcję $v(t)$ w Wolfram Alpha, przyjmując $b=0.12$ oraz $c=2.4\times10^{-4}$.
-- Zakładając prędkość początkową $100\,\mathrm{km/h}$, znajdź drogę, po której samochód się zatrzyma.
+- Znajdź funkcję $v(t)$ w Wolfram Alpha, przyjmując $b=0.12$, $c=2.4\times10^{-4}$ oraz warunek początkowy $v(0)=100\,\mathrm{km/h}$.
+- Znajdź drogę, po której samochód się zatrzyma.
 - O ile zmieniłaby się droga do zatrzymania samochodu, gdyby zaniedbać opór powietrza, czyli przyjąć $c=0$?
 
 **Zadanie E.** Przyporządkuj poniższe pola kierunków odpowiednim równaniom.
@@ -80,3 +80,12 @@ gdzie $v$ jest prędkością samochodu w metrach na sekundę, a $t$ — czasem w
 - $\displaystyle \frac{dx}{dt}=1$
 - $\displaystyle \frac{dx}{dt}=t$
 - $\displaystyle \frac{dx}{dt}=tx$
+
+**Zadanie F.** Rozwiąż numerycznie w Octave proste równanie pierwszego rzędu
+
+$
+\frac{dx}{dt}=-x,
+\qquad x(0)=1,
+$
+
+korzystając z funkcji `lsode`. Porównaj wynik numeryczny z rozwiązaniem dokładnym $x(t)=e^{-t}$, rysując obie funkcje na jednym wykresie.

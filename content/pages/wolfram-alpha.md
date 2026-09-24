@@ -21,12 +21,21 @@ Choć współczesne modele językowe (**LLM**, *Large Language Models*) i wyszuk
 
 ## Jak wpisywać zapytania?
 
-Wolfram Alpha nie wymaga formułowania pełnych zdań. Często wystarcza krótka fraza, nazwa obiektu lub samo wyrażenie matematyczne, np.:
+Wolfram Alpha nie wymaga formułowania pełnych zdań. Często wystarcza krótka fraza, nazwa obiektu lub samo wyrażenie matematyczne. Sprawdź kilka przykładów:
 
 ```text
 copper
+```
+
+```text
 10 nearest stars
+```
+
+```text
 population France / population Germany
+```
+
+```text
 integrate sin(x)^2
 ```
 
@@ -116,7 +125,7 @@ Wolfram Alpha ma wersję podstawową oraz płatne plany Pro z dodatkowymi funkcj
 ## Zadania A — dane i wiedza ogólna
 
 1. Podaj wartość tysięcznej cyfry w rozwinięciu dziesiętnym liczby $\pi$.
-2. Podaj bieżącą odległość Księżyca od Ziemi.
+2. Podaj aktualną odległość Księżyca od Ziemi.
 3. Podaj częstotliwość występowania liter alfabetu w tekście w języku polskim.
 4. Policz średnicę atomu krzemu w nanometrach.
 5. Sprawdź pogodę w dniu swoich urodzin w swoim mieście.
@@ -202,7 +211,7 @@ $$
 **19.** Narysuj wykres funkcji
 
  $$
- f(x,y)=\frac{\sin\!\left(\sqrt{x^2+y^2}\right)}{\sqrt{x^2+y^2}}.
+ f(x,y)=\frac{\sin\left(\sqrt{x^2+y^2}\right)}{\sqrt{x^2+y^2}}.
  $$
 
  Na kolejnych zajęciach wygenerujesz analogiczny wykres w Octave poleceniem `sombrero`.

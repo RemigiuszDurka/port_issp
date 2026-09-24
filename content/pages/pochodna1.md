@@ -46,7 +46,7 @@ $$
 
 ## Zadania do wykonania ręcznie
 
-### Zadanie 1. Obliczanie pochodnych
+### **Zadanie 1.** Obliczanie pochodnych
 
 Oblicz pochodne następujących funkcji:
 
@@ -85,7 +85,7 @@ Oblicz pochodne następujących funkcji:
 33. $y(x)=x^x$
 34. $y(x)=\arccos x$
 
-### Zadanie 2. Pochodna z definicji
+### **Zadanie 2.** Pochodna z definicji
 
 Policz pochodną z definicji ilorazu różnicowego dla:
 
@@ -93,7 +93,7 @@ Policz pochodną z definicji ilorazu różnicowego dla:
 - $x^2+1$,
 - stałej $a$.
 
-### Zadanie 3. Położenie, prędkość i przyspieszenie
+### **Zadanie 3.** Położenie, prędkość i przyspieszenie
 
 Policz ręcznie funkcję prędkości i przyspieszenia w zależności od czasu dla podanych poniżej ruchów. Jakie było położenie, prędkość i przyspieszenie w piątej sekundzie?
 
@@ -101,15 +101,15 @@ Policz ręcznie funkcję prędkości i przyspieszenia w zależności od czasu dl
 - $x(t)=\sin t$,
 - $x(t)=t-\frac{1}{t+1}$.
 
-### Zadanie 4. Weryfikacja komputerowa ruchu
+### **Zadanie 4.** Weryfikacja komputerowa ruchu
 
 Biorąc funkcje z poprzedniego zadania, narysuj w Octave na jednym wykresie $x(t)$, $v(t)$ i $a(t)$ dla każdego przypadku. Nie zapomnij o legendzie. Czy wartości dla $t=5$ pokrywają się z ręcznymi obliczeniami?
 
-### Zadanie 5. Reguła łańcuchowa
+### **Zadanie 5.** Reguła łańcuchowa
 
 O pewnych funkcjach $f$ i $g$ wiadomo, że $g(0)=0$, $g'(0)=2$ oraz $f'(0)=4$. Ile wynosi pochodna funkcji złożonej $f(g(x))$ w punkcie $x=0$?
 
-### Zadanie 6. Reguła de l’Hospitala
+### **Zadanie 6.** Reguła de l’Hospitala
 
 Korzystając z reguły de l’Hospitala, znajdź granice:
 
@@ -137,7 +137,7 @@ $$
 \lim_{x\to\infty}e^x\frac{1}{x}.
 $$
 
-### Zadanie 7. Kiedy nie stosować reguły de l’Hospitala?
+### **Zadanie 7.** Kiedy nie stosować reguły de l’Hospitala?
 
 Dlaczego reguły de l’Hospitala nie można użyć do wyznaczenia granicy
 
@@ -145,7 +145,7 @@ $$
 \lim_{x\to 0}\frac{x+1}{x-1}\,?
 $$
 
-### Zadanie 8. Reguła Leibniza
+### **Zadanie 8.** Reguła Leibniza
 
 Uogólnij regułę Leibniza $(fg)'=f'g+fg'$ na przypadek pochodnej iloczynu trzech funkcji: 
 

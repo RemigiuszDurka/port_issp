@@ -19,8 +19,7 @@ $$
 
 ## Wykład
 
-- Materiały: <a href="../../site_assets/calki.pdf">Całki.pdf</a>
-- Stare: [notatki 1](../site_assets/Calki-1.svg) + [notatki 2](../site_assets/Calki-2.svg)
+- Materiały: <a href="../site_assets/calki.pdf">Całki.pdf</a>
 - [Karta wzorów](../site_assets/karta_wzorow_v2.png)
 - [Starsza prezentacja](../site_assets/calki_old.pdf)
 
@@ -139,20 +138,6 @@ gdzie $f(x)=\sin x$.
 **Zadanie 4.** Oblicz ręcznie pole figury ograniczonej krzywymi $y=e^x$, $y=e^{-x}$ oraz prostą $x=1$.
 
 **Zadanie 5.** Oblicz pole obszaru ograniczonego liniami $x=1$, $x=2$, $y=0$ oraz $y=x^2+1$.
-
-**Zadanie 6.** Pole koła i objętość kuli. Obejrzyj [film](https://www.youtube.com/watch?v=whYqhpc6S6g). Koło o promieniu $R$ można traktować jak sumę pierścieni o promieniach $r$ biegnących od $0$ do $R$, każdy o polu powierzchni $2\pi r\,\Delta r$. Prowadzi to do całki
-
-$$
-S(R)=\int_0^R2\pi r\,dr.
-$$
-
-Analogicznie kulę o promieniu $R$ można rozpatrywać jako sumę sfer o powierzchni $4\pi r^2$ i grubości $\Delta r$, gdzie $0\le r\le R$. Wynika stąd
-
-$$
-V(R)=\int_0^R4\pi r^2\,dr.
-$$
-
-Wyznacz wartości powyższych całek i wyprowadź w ten sposób wzory na pole koła i objętość kuli.
 
 ## Zadania do wykonania przy asyście komputera
 

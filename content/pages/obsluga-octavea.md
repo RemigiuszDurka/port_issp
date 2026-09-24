@@ -165,17 +165,9 @@ programik
 
 W wersji graficznej analogiczną rolę pełni m.in. panel *File Browser*. Warto zawsze sprawdzić, czy wskazuje katalog, w którym znajdują się używane skrypty i dane.
 
-
-## Octave Online
-
-Do ćwiczeń można wykorzystać również środowisko działające w przeglądarce:
-
-[Uruchom Octave Online](https://octave-online.net/){ .md-button .md-button--primary }
-
-
 ## Zadania
 
-**Zadanie 1.** Uruchom Octave i wykonaj kilka prostych poleceń.
+**Zadanie 1.** Uruchom Octave i wykonaj kolejno polecenia `2+2`, `sin(pi/2)` oraz `pwd`. Sprawdź otrzymane wyniki.
 
 **Zadanie 2.** Za pomocą `↑` i `↓` wróć do wcześniejszych poleceń i zmodyfikuj jedno z nich.
 
