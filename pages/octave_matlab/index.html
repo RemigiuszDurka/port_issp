@@ -358,15 +358,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#matlab" class="md-nav__link">
-    <span class="md-ellipsis">
-      MATLAB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#zwiazek-z-gnu-octave" class="md-nav__link">
     <span class="md-ellipsis">
       Związek z GNU Octave
@@ -403,15 +394,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pierwszy-test-zgodnosci" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pierwszy test zgodności
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#obliczenia-online" class="md-nav__link">
     <span class="md-ellipsis">
       Obliczenia online
@@ -441,15 +423,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#co-wybrac" class="md-nav__link">
-    <span class="md-ellipsis">
-      Co wybrać?
-    </span>
-  </a>
   
 </li>
       
@@ -971,15 +944,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#matlab" class="md-nav__link">
-    <span class="md-ellipsis">
-      MATLAB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#zwiazek-z-gnu-octave" class="md-nav__link">
     <span class="md-ellipsis">
       Związek z GNU Octave
@@ -1010,15 +974,6 @@
   <a href="#gdzie-zgodnosc-najczesciej-sie-konczy" class="md-nav__link">
     <span class="md-ellipsis">
       Gdzie zgodność najczęściej się kończy?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pierwszy-test-zgodnosci" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pierwszy test zgodności
     </span>
   </a>
   
@@ -1057,15 +1012,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#co-wybrac" class="md-nav__link">
-    <span class="md-ellipsis">
-      Co wybrać?
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1086,12 +1032,12 @@
 
 
 <h1 id="matlab-i-octave">MATLAB i Octave<a class="headerlink" href="#matlab-i-octave" title="Permanent link">&para;</a></h1>
-<p><strong>MATLAB</strong> jest jednym z najważniejszych środowisk obliczeniowych wykorzystywanych w nauce, technice i zastosowaniach inżynierskich. Jest jednak oprogramowaniem komercyjnym i płatnym, choć studentom często oferowany jest bezpłatny lub ograniczony dostęp w ramach licencji uczelnianych i wersji online. Na tym kursie będziemy korzystać przede wszystkim z <strong>GNU Octave</strong> — darmowego i otwartoźródłowego środowiska do obliczeń numerycznych, którego składnia jest w dużej mierze zgodna z MATLAB-em. Dzięki temu większość podstawowych umiejętności zdobytych w Octave można później bez trudu przenieść do MATLAB-a. Na tej stronie porównamy oba środowiska, wskazując <strong>co jest wspólne, gdzie pojawiają się różnice i jak sprawdzać przenośność kodu</strong>.</p>
-<h2 id="matlab">MATLAB<a class="headerlink" href="#matlab" title="Permanent link">&para;</a></h2>
-<p><strong>MATLAB</strong> jest komercyjnym środowiskiem obliczeniowym i językiem programowania rozwijanym przez firmę MathWorks. Jest szeroko używany w nauce, technice i analizie danych, szczególnie tam, gdzie korzysta się ze specjalistycznych pakietów (<em>toolboxów</em>).</p>
+<p><strong>MATLAB</strong> jest komercyjnym środowiskiem obliczeniowym i językiem programowania rozwijanym przez firmę MathWorks. Jest szeroko wykorzystywany w nauce, technice i zastosowaniach inżynierskich. Jest jednak oprogramowaniem komercyjnym i płatnym, choć studentom często oferowany jest bezpłatny lub ograniczony dostęp w ramach licencji uczelnianych i wersji online. </p>
 <p><a class="md-button md-button--primary" href="https://www.mathworks.com/products/matlab.html">MATLAB</a></p>
+<p>Na tym kursie będziemy korzystać przede wszystkim z <strong>GNU Octave</strong> — darmowego i otwartoźródłowego środowiska do obliczeń numerycznych, którego składnia jest w dużej mierze zgodna z MATLAB-em. Dzięki temu większość podstawowych umiejętności zdobytych w Octave można później bez trudu przenieść do MATLAB-a.</p>
+<p><a class="md-button md-button--primary" href="https://www.gnu.org/software/octave/">GNU Octave</a></p>
 <h2 id="zwiazek-z-gnu-octave">Związek z GNU Octave<a class="headerlink" href="#zwiazek-z-gnu-octave" title="Permanent link">&para;</a></h2>
-<p>GNU Octave jest osobnym, wolnym projektem przeznaczonym do obliczeń numerycznych. Jego składnia została zaprojektowana tak, aby duża część podstawowego kodu numerycznego była zgodna z MATLAB-em.</p>
+<p>GNU Octave jest osobnym, wolnym projektem przeznaczonym do obliczeń numerycznych. Jego składnia została zaprojektowana tak, aby duża część podstawowego kodu numerycznego była zgodna z MATLAB-em.  Na tej stronie porównujemy oba środowiska, wskazując co jest wspólne, gdzie pojawiają się różnice i jak sprawdzać przenośność kodu.</p>
 <p>W obu środowiskach bardzo podobnie definiujemy liczby, wektory i macierze:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">v</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">];</span>
@@ -1172,6 +1118,39 @@
 </tbody>
 </table>
 <p>Jeżeli kod ma działać w obu środowiskach, najbezpieczniej używać <strong>wspólnego podzbioru składni</strong>, np. komentarzy <code>%</code> oraz zwykłego <code>end</code>, i sprawdzać dostępność bardziej specjalistycznych funkcji.</p>
+<p>W praktyce <strong>większość podstawowego kodu używanego na tym kursie będzie wyglądała tak samo w Octave i MATLAB-ie</strong>. Różnice pojawiają się przede wszystkim w rozszerzeniach składni i bardziej specjalistycznych funkcjach. Kilka prostych przykładów:</p>
+<table>
+<thead>
+<tr>
+<th>GNU Octave</th>
+<th>MATLAB</th>
+<th>Uwagi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># komentarz</code></td>
+<td><code>% komentarz</code></td>
+<td><code>%</code> działa w obu środowiskach</td>
+</tr>
+<tr>
+<td><code>endfor</code>, <code>endif</code>, <code>endfunction</code></td>
+<td><code>end</code></td>
+<td>zwykłe <code>end</code> działa również w Octave</td>
+</tr>
+<tr>
+<td><code>2**3</code></td>
+<td><code>2^3</code></td>
+<td>zapis z <code>^</code> działa w obu środowiskach</td>
+</tr>
+<tr>
+<td><code>a != b</code></td>
+<td><code>a ~= b</code></td>
+<td>zapis <code>~=</code> działa również w Octave</td>
+</tr>
+</tbody>
+</table>
+<p>Dlatego podczas kursu będziemy na ogół używać takiej składni, która jest poprawna w obu programach. Pozwoli to później przenieść większość prostych skryptów z Octave do MATLAB-a bez przepisywania kodu.</p>
 <h2 id="macierzowo-czy-element-po-elemencie">Macierzowo czy element po elemencie?<a class="headerlink" href="#macierzowo-czy-element-po-elemencie" title="Permanent link">&para;</a></h2>
 <p>Jedna z najważniejszych wspólnych cech MATLAB-a i Octave to rozróżnienie pomiędzy algebrą macierzową a operacjami wykonywanymi element po elemencie.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">A</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">A</span><span class="w">      </span><span class="c">% mnożenie macierzowe</span>
@@ -1190,67 +1169,20 @@
 <li>obiektów, klas i rozbudowanych aplikacji,</li>
 <li>szczegółów składni specyficznych dla jednego środowiska.</li>
 </ul>
-<p>Dlatego nie należy zakładać, że program działający w jednym środowisku automatycznie zadziała w drugim. W razie wątpliwości sprawdzamy dokumentację konkretnej funkcji.</p>
-<h2 id="pierwszy-test-zgodnosci">Pierwszy test zgodności<a class="headerlink" href="#pierwszy-test-zgodnosci" title="Permanent link">&para;</a></h2>
-<p>Uruchom w Octave i — jeżeli masz dostęp — również w MATLAB-ie:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">,</span><span class="w"> </span><span class="mi">200</span><span class="p">);</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">f</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">@(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">.*</span><span class="w"> </span><span class="nb">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">);</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">y</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">grid</span><span class="w"> </span><span class="s">on</span><span class="p">;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="nb">xlabel</span><span class="p">(</span><span class="s">'x'</span><span class="p">);</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">ylabel</span><span class="p">(</span><span class="s">'f(x)'</span><span class="p">);</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nb">title</span><span class="p">(</span><span class="s">'Pierwszy wykres'</span><span class="p">);</span>
-</code></pre></div>
-<p>Następnie zmień parametry <code>0.1</code> i <code>3</code> i sprawdź, jak wpływają na kształt wykresu. W tym przykładzie oba środowiska powinny zachowywać się praktycznie tak samo.</p>
 <h2 id="obliczenia-online">Obliczenia online<a class="headerlink" href="#obliczenia-online" title="Permanent link">&para;</a></h2>
-<p>Do wykonywania większości przykładów z kursu nie trzeba instalować programu lokalnie.</p>
 <h3 id="octave-online">Octave Online<a class="headerlink" href="#octave-online" title="Permanent link">&para;</a></h3>
 <p><strong>Octave Online</strong> udostępnia GNU Octave bezpośrednio w przeglądarce. Można wpisywać polecenia w konsoli, wykonywać obliczenia i rysować wykresy.</p>
 <p><a class="md-button md-button--primary" href="https://octave-online.net/">Uruchom Octave Online</a></p>
 <p>Najprostszy test:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">x</span> <span class="p">=</span> <span class="nb">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">y</span> <span class="p">=</span> <span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nb">grid</span> <span class="n">on</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">x</span> <span class="p">=</span> <span class="nb">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">y</span> <span class="p">=</span> <span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">grid</span> <span class="n">on</span><span class="p">;</span>
 </code></pre></div>
 <h3 id="matlab-online">MATLAB Online<a class="headerlink" href="#matlab-online" title="Permanent link">&para;</a></h3>
 <p>MathWorks udostępnia <strong>MATLAB Online</strong>. Zakres dostępu zależy od posiadanej licencji lub aktualnej oferty wersji podstawowej, dlatego bieżące limity najlepiej sprawdzać bezpośrednio na stronie MathWorks.</p>
 <p><a class="md-button md-button--primary" href="https://matlab.mathworks.com/">Uruchom MATLAB Online</a>
 <a class="md-button" href="https://www.mathworks.com/products/matlab-online/matlab-online-versions.html">Porównaj wersje MATLAB Online</a></p>
-<h2 id="co-wybrac">Co wybrać?<a class="headerlink" href="#co-wybrac" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Sytuacja</th>
-<th>Narzędzie</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Realizuję przykłady z tego kursu</td>
-<td><strong>GNU Octave</strong></td>
-</tr>
-<tr>
-<td>Chcę szybko sprawdzić kod w przeglądarce</td>
-<td><strong>Octave Online</strong></td>
-</tr>
-<tr>
-<td>Mam dostęp do licencji MATLAB-a i chcę sprawdzić zgodność</td>
-<td><strong>MATLAB</strong> lub <strong>MATLAB Online</strong></td>
-</tr>
-<tr>
-<td>Potrzebuję konkretnego toolboxa MathWorks</td>
-<td><strong>MATLAB</strong></td>
-</tr>
-<tr>
-<td>Chcę pracować w wolnym, otwartym środowisku</td>
-<td><strong>GNU Octave</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Najważniejsza umiejętność pozostaje wspólna: poprawne formułowanie obliczeń numerycznych, praca na wektorach i macierzach oraz rozumienie różnicy między operacjami macierzowymi i elementowymi.</p>
 
 
 

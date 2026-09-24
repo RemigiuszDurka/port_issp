@@ -980,8 +980,8 @@ F\left(t,x(t),\frac{dx}{dt},\frac{d^2x}{dt^2},\ldots,\frac{d^nx}{dt^n}\right)=0.
 \]</div>
 <p>gdzie <span class="arithmatex">\(v\)</span> jest prędkością samochodu w metrach na sekundę, a <span class="arithmatex">\(t\)</span> — czasem wyrażonym w sekundach. Aby jednostki w równaniu były zgodne, parametr <span class="arithmatex">\(b\)</span> ma jednostkę <span class="arithmatex">\(\mathrm{m/s^2}\)</span>, natomiast <span class="arithmatex">\(c\)</span> — <span class="arithmatex">\(\mathrm{m^{-1}}\)</span>. Parametry te opisują odpowiednio składnik oporu niezależny od prędkości oraz składnik proporcjonalny do <span class="arithmatex">\(v^2\)</span>.</p>
 <ul>
-<li>Znajdź funkcję <span class="arithmatex">\(v(t)\)</span> w Wolfram Alpha, przyjmując <span class="arithmatex">\(b=0.12\)</span> oraz <span class="arithmatex">\(c=2.4\times10^{-4}\)</span>.</li>
-<li>Zakładając prędkość początkową <span class="arithmatex">\(100\,\mathrm{km/h}\)</span>, znajdź drogę, po której samochód się zatrzyma.</li>
+<li>Znajdź funkcję <span class="arithmatex">\(v(t)\)</span> w Wolfram Alpha, przyjmując <span class="arithmatex">\(b=0.12\)</span>, <span class="arithmatex">\(c=2.4\times10^{-4}\)</span> oraz warunek początkowy <span class="arithmatex">\(v(0)=100\,\mathrm{km/h}\)</span>.</li>
+<li>Znajdź drogę, po której samochód się zatrzyma.</li>
 <li>O ile zmieniłaby się droga do zatrzymania samochodu, gdyby zaniedbać opór powietrza, czyli przyjąć <span class="arithmatex">\(c=0\)</span>?</li>
 </ul>
 <p><strong>Zadanie E.</strong> Przyporządkuj poniższe pola kierunków odpowiednim równaniom.</p>
@@ -993,6 +993,12 @@ F\left(t,x(t),\frac{dx}{dt},\frac{d^2x}{dt^2},\ldots,\frac{d^nx}{dt^n}\right)=0.
 <li><span class="arithmatex">\(\displaystyle \frac{dx}{dt}=t\)</span></li>
 <li><span class="arithmatex">\(\displaystyle \frac{dx}{dt}=tx\)</span></li>
 </ul>
+<p><strong>Zadanie F.</strong> Rozwiąż numerycznie w Octave proste równanie pierwszego rzędu</p>
+<p>$
+\frac{dx}{dt}=-x,
+\qquad x(0)=1,
+$</p>
+<p>korzystając z funkcji <code>lsode</code>. Porównaj wynik numeryczny z rozwiązaniem dokładnym <span class="arithmatex">\(x(t)=e^{-t}\)</span>, rysując obie funkcje na jednym wykresie.</p>
 
 
 
